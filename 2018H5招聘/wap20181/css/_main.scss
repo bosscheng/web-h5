@@ -1,0 +1,105 @@
+.main {
+  background: url("../images/main-bg.png") no-repeat center;
+  background-size: 100% 100%;
+
+  > div {
+    position: relative;
+  }
+
+  .main-top {
+    width: 100%;
+    height: px2rem(348);
+    background: url("../images/main-top.png") no-repeat center;
+    background-size: 100% 100%;
+    padding-top: px2rem(10);
+    z-index: 1;
+    transform: scale(4);
+    transition: transform 0.2s ease-in;
+
+    &.show-normal{
+      transform: scale(1);
+    }
+  }
+
+  .main-title {
+    width: 100%;
+    height: px2rem(218);
+    background: url("../images/main-title.png") no-repeat center;
+    background-size: 100% 100%;
+    margin-top: px2rem(-85);
+
+    > div {
+      width: px2rem(468);
+      height: px2rem(136);
+      margin: 0 auto;
+      background: url("../images/main-title-inner.png") no-repeat center;
+      background-size: contain;
+      padding-top: px2rem(120);
+    }
+  }
+
+  .main-people {
+    width: px2rem(645);
+    height: px2rem(635);
+    margin: 0 auto;
+    background: url("../images/main-people.png") no-repeat center;
+    background-size: 100% 100%;
+  }
+
+  //
+  .fireworks {
+    width: px2rem(100);
+    height: px2rem(100);
+    background: url("../images/fireworks.png") no-repeat center;
+    background-size: contain;
+  }
+
+  //
+  .fireworks1 {
+    position: absolute;
+    left: px2rem(105);
+    top: px2rem(370);
+    transform: scale(0);
+    animation: blast 1.5s linear infinite;
+  }
+
+  .fireworks2 {
+    position: absolute;
+    left: px2rem(150);
+    top: px2rem(430);
+    transform: scale(0);
+    animation: blast 1.5s linear 1s infinite;
+  }
+
+  .fireworks3 {
+    position: absolute;
+    right: px2rem(125);
+    top: px2rem(375);
+    transform: scale(0);
+    animation: blast 1.5s linear 0.5s infinite;
+  }
+
+  .main-footer {
+    width: 100%;
+    height: px2rem(350);
+    background: url("../images/main-footer.png") no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: px2rem(50);
+
+    > div {
+      width: px2rem(720);
+      height: px2rem(116);
+      background: url("../images/main-button.png") no-repeat center;
+      background-size: contain;
+      margin: 0 auto;
+      margin-top: px2rem(225);
+      animation: shake 0.8s linear infinite;
+
+
+      &:active {
+        transform: scale(.95)
+      }
+    }
+  }
+}

@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>这个春天和世界五百强来一场约会</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="//ssl.suning.com/favicon.ico" type="image/x-icon">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="./css/index.css?v=3">
+</head>
+<body>
+<!--  -->
+<div class="loading-wrap wrapper" id="loading">
+    <div class="content">
+        <div class="progress">
+            <span id="loadPercent" style="width: 5%"></span>
+        </div>
+        <div class="progress-tips"></div>
+    </div>
+</div>
+<!-- main -->
+<div class="main wrapper hide" id="main">
+    <div class="main-top"></div>
+    <div class="main-title">
+        <div></div>
+    </div>
+    <div class="fireworks fireworks1"></div>
+    <div class="fireworks fireworks2"></div>
+    <div class="fireworks fireworks3"></div>
+    <div class="main-people">
+
+    </div>
+
+    <div class="main-footer">
+        <div id="toRoleSelect"></div>
+    </div>
+</div>
+<!-- 角色选择 -->
+<div class="wrapper role-select hide" id="roleSelect">
+    <div class="header">
+        <div class="common-header"></div>
+        <div class="header-title role-size role-selects"></div>
+    </div>
+    <div class="content">
+        <div class="role-list">
+            <div class="role-list1">
+                <div class="icon selected">
+                    <span data-role="chanpingjl" class="inner-icon icon-chanpingjl"><i></i></span>
+                    <span class="text text-chanpingjl"></span>
+                </div>
+                <div class="icon">
+                    <span data-role="qianduan" class="inner-icon icon-qianduan"><i></i></span>
+                    <span class="text text-qianduan"></span>
+                </div>
+                <div class="icon">
+                    <span data-role="android" class="inner-icon icon-android"><i></i></span>
+                    <span class="text text-android"></span>
+                </div>
+                <div class="icon">
+                    <span data-role="ios" class="inner-icon icon-ios"><i></i></span>
+                    <span class="text text-ios"></span>
+                </div>
+            </div>
+            <div class="role-list2">
+                <div class="icon">
+                    <span data-role="shuju" class="inner-icon icon-shuju"><i></i></span>
+                    <span class="text text-shuju"></span>
+                </div>
+                <div class="icon">
+                    <span data-role="java" class="inner-icon icon-java"><i></i></span>
+                    <span class="text text-java"></span>
+                </div>
+                <div class="icon">
+                    <span data-role="test" class="inner-icon icon-test"><i></i></span>
+                    <span class="text text-test"></span>
+                </div>
+                <div class="icon">
+                    <span data-role="jiaohu" class="inner-icon icon-jiaohu"><i></i></span>
+                    <span class="text text-jiaohu"></span>
+                </div>
+            </div>
+            <div class="role-list3">
+                <div class="icon">
+                    <span data-role="shijue" class="inner-icon icon-shijue"><i></i></span>
+                    <span class="text text-shijue"></span>
+                </div>
+                <div class="icon">
+                    <span data-role="jiagou" class="inner-icon icon-jiagou"><i></i></span>
+                    <span class="text text-jiagou"></span>
+                </div>
+                <div class="icon">
+                    <span data-role="jszj" class="inner-icon icon-jszj"><i></i></span>
+                    <span class="text text-jszj"></span>
+                </div>
+                <div class="icon">
+                    <span data-role="chanpingzj" class="inner-icon icon-chanpingzj"><i></i></span>
+                    <span class="text text-chanpingzj"></span>
+                </div>
+            </div>
+        </div>
+        <div class="select-footer">
+            <div class="sure-btn" id="toRoleInfo"></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 角色信息 -->
+<div class="wrapper role-information hide" id="roleInfo">
+    <!-- 产品经理 -->
+    <div class="role-info-inner chanpingjl">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-chanpingjl"></div>
+        </div>
+
+        <div class="info-tips info-chanpingjl"></div>
+        <div class="content">
+            <div class="icon-bg icon-chanpingjl-big-bg"></div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-chanpingjl-big">
+
+            </div>
+        </div>
+
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div class="group-content">
+                        <p>1、负责移动互联网产品的设计，以及持续改进，跟进产品设计、开发、测试、上线全过程；</p>
+
+                        <p>2、负责监测、整理与分析用户需求、竞品动态与行业情况；</p>
+
+                        <p>3、根据公司战略和市场研究，不断挖掘、设计新的产品。</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div class="group-content">
+                        <p>1、对移动互联网新产品有敏锐的嗅觉，有独立完成产品设计的能力，对发展规律和未来趋势有一定认识；</p>
+
+                        <p>2、具有一定的iPhone/android产品规划设计、产品管理的实践经验；</p>
+
+                        <p>3、对用户需求敏感，善于倾听用户声音，体验用户流程；</p>
+
+                        <p>4、对工作充满激情，具有强烈的创新精神和责任心，能承受工作压力。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 前端 -->
+    <div class="role-info-inner qianduan">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-qianduan"></div>
+        </div>
+
+        <div class="info-tips info-qianduan"></div>
+        <div class="content">
+            <div class="icon-bg icon-qianduan-big-bg"></div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-qianduan-big"></div>
+            <div class="icon-qianduan-book"></div>
+        </div>
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div class="group-content">
+                        <p>1、负责苏宁易购整站的开发和维护，需要考虑性能和兼容性；</p>
+
+                        <p>2、负责苏宁易购项目的开发与维护，包括 Hybrid 开发方式；</p>
+
+                        <p>3、负责一些新技术的研究与应用，可以把一些新技术应用到日常项目中；</p>
+
+                        <p>4、可以独立开发适配各种移动设备的项目，并能跟随设备和技术的更新而快速切换代码。</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div class="group-content">
+                        <p>1、熟练运用HTML/CSS/Javascript 进行跨浏览器、跨设备网页开发和重构；</p>
+
+                        <p>2、深入了解web标准，了解主流JS Frameworks及相关web技术；</p>
+
+                        <p>3、良好的团队合作精神，关注用户体验细节，较强理解力与沟通能力。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+    </div>
+    <!--android -->
+    <div class="role-info-inner android">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-android"></div>
+        </div>
+
+        <div class="info-tips info-android"></div>
+        <div class="content">
+            <div class="icon-bg icon-android-big-bg"></div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-android-big"></div>
+            <div class="icon-android-balloon"></div>
+        </div>
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div class="group-content">
+                        <p>1、负责 Android 开发环境搭建，应用程序的设计、开发工作；</p>
+
+                        <p>2、负责完成软件开发、验证和和修正测试中发现的问题；</p>
+
+                        <p>3、负责根据开发规范与流程独立完成模块的设计、编码、测试以及相关文档。</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div class="group-content">
+                        <p>1、熟悉Android平台及框架，能够搭建android app应用框架，三年以上实际开发经验；</p>
+
+                        <p>2、有进程/多线程编程经验，熟悉Socket网络编程，熟悉TCP/IP，HTTP等网络协议；</p>
+
+                        <p>3、熟悉混合式开发，并对内嵌H5页面有优化经验者优先考虑；熟练使用AS开发工具及相关插件。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+    </div>
+    <!-- ios -->
+    <div class="role-info-inner ios">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-ios"></div>
+        </div>
+
+        <div class="info-tips info-ios"></div>
+        <div class="content">
+            <div class="icon-bg icon-ios-big-bg"></div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-ios-big"></div>
+        </div>
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div>
+                        <p>1、主要从事iOS（iPhone/iPad）移动平台客户端软件的功能设计、开发、实现和优化；</p>
+
+                        <p>2、根据产品功能模块设计，编码实现各模块功能，并确保开发质量与进度；</p>
+
+                        <p>3、负责软件的设计、编程、调试和模块测试工作。</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div>
+                        <p>1、具备扎实的c/c++、objective-c编程基础，良好的编程习惯；</p>
+
+                        <p>2、熟悉Mac OS X，XCode和iOS SDK开发环境，熟悉iPhone UI框架；</p>
+
+                        <p>3、熟练掌握数据库、XML、JSON协议，socket通讯等常用技术。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 大数据 开发 -->
+    <div class="role-info-inner shuju">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-shuju"></div>
+        </div>
+
+        <div class="info-tips info-shuju"></div>
+        <div class="content">
+            <div class="icon-bg icon-shuju-big-bg"></div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-shuju-big">
+
+            </div>
+        </div>
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div class="group-content">
+                        <p>1、主要从事电商平台的相关项目研发和实施工作；</p>
+
+                        <p>2、根据产品功能模块设计，编码实现各模块功能，并确保开发质量与进度；</p>
+
+                        <p>3、负责软件的设计、编程、调试和单元测试工作。</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div class="group-content">
+                        <p>1、2年以上大数据开发经验（研究生学历可适当放宽条件）；</p>
+
+                        <p>2、熟练使用Hadoop、hbase、Spark, ES等开源软件；</p>
+
+                        <p>3、有数据建模，数据挖掘算法开发经验优先。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+    </div>
+    <!-- java 开发 -->
+    <div class="role-info-inner java">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-java"></div>
+        </div>
+
+        <div class="info-tips info-java"></div>
+        <div class="content">
+            <div class="icon-bg icon-java-big-bg"></div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-java-big">
+
+            </div>
+        </div>
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div class="group-content">
+                        <p>1、主要从事电子商务平台项目研发开发实施工作； </p>
+
+                        <p>2、根据产品功能模块设计，编码实现各模块功能，并确保开发质量与进度； </p>
+
+                        <p>3、负责软件的设计、编程、调试和单元测试工作。</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div class="group-content">
+                        <p>1、熟悉使用mysql/db2/oracle中的一种，精通sql语句，能写出高效率的sql语句；</p>
+
+                        <p>2、精通HTML, JavaScript, JSP/Freemarker,Jquery等web技术，掌握页面缓存的使用； </p>
+
+                        <p>3、熟练Redis\membercachee缓存的设计与使用，有电子商务网站，高并发高可用型项目经验者优先。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+    </div>
+    <!-- test 开发 -->
+    <div class="role-info-inner test">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-test"></div>
+        </div>
+
+        <div class="info-tips info-test"></div>
+        <div class="content">
+            <div class="icon-bg icon-test-big-bg">
+
+            </div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-test-big">
+
+            </div>
+        </div>
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div class="group-content">
+                        <p>1、根据产品需求，准备测试方案、测试用例设计；</p>
+
+                        <p>2、根据需求和开发设计，编写接口、UI界面自动化测试脚本； </p>
+
+                        <p>3、手工或自动化执行测试用例，提交并跟踪缺陷，协助开发定位问题和解决问题； </p>
+
+                        <p>4、根据测试过程编写测试日报、测试报告，提交产品经理验收和项目经理结项。 </p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div class="group-content">
+                        <p>1、熟悉软件测试流程，包括测试设计方法、缺陷管理过程，质量回溯分析等； </p>
+
+                        <p>2、有web前台、手机wap网页、android或ios手机app测试工作经验者优先； </p>
+
+                        <p>3、熟悉大型数据库的操作(MYSQL或DB2)，了解java、object-c、shell或python语言； </p>
+
+                        <p>4、熟练掌握fiddler抓包工具，熟悉robotium、appium自动化测试框架。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 交互  开发 -->
+    <div class="role-info-inner jiaohu">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-jiaohu"></div>
+        </div>
+
+        <div class="info-tips info-jiaohu"></div>
+        <div class="content">
+            <div class="icon-bg icon-jiaohu-big-bg">
+
+            </div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-jiaohu-big">
+
+            </div>
+        </div>
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div class="group-content">
+                        <p>1、负责相关产品的交互设计工作；</p>
+
+                        <p>2、参与产品规划构思，分析业务需求，归纳用户目标和任务；</p>
+
+                        <p>3、设计产品的人机交互界面结构、用户操作流程、界面信息架构、原型图等，持续优化产品的易用性； </p>
+
+                        <p>4、配合视觉设计师完成产品视觉设计，并协同前端及开发团队实现交互效果。</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div class="group-content">
+                        <p>1、本科以上学历，美术、工业设计、心理学或计算机相关专业； </p>
+
+                        <p>2、2年以上的交互设计经验，对web、移动端产品和应用有强烈兴趣和激情； </p>
+
+                        <p>3、熟悉UED团队工作流程，对交互设计有较深理解和实践，可独立完成整个设计过程（用户角色分析、故事板、流程图、线框图等）；</p>
+
+                        <p>4、对业界最新的交互应用有深入的见解。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 视觉  开发 -->
+    <div class="role-info-inner shijue">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-shijue"></div>
+        </div>
+
+        <div class="info-tips info-shijue"></div>
+        <div class="content">
+            <div class="icon-bg icon-shijue-big-bg">
+
+            </div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-shijue-big">
+
+            </div>
+        </div>
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div class="group-content">
+                        <p>1、负责客户端的界面设计；</p>
+
+                        <p>2、优化用户体验及完善设计流程；</p>
+
+                        <p>3、根据产品需求与技术配合，配合开发人员实现产品界面和功能；</p>
+
+                        <p>4、对通用类软件或互联网应用产品的人机交互方面有自己的理解和认识。</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div class="group-content">
+                        <p>1、美术、设计或UI相关专业，具备深厚的美术功底、良好的审美能力和创新意识；</p>
+
+                        <p>2、3年以上相关工作经验，有独立完成的相关案例作品；</p>
+
+                        <p>3、熟练掌握Photoshop、Flash、Illusrtrator等设计软件；对div+css有一定了解；</p>
+
+                        <p>4、具备移动端UI设计经验者优先考虑；</p>
+
+                        <p>5、有责任心，工作细致有条理，个性开朗，具备良好的团队沟通和协作能力。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 架构  开发 -->
+    <div class="role-info-inner jiagou">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-jiagou"></div>
+        </div>
+
+        <div class="info-tips info-jiagou"></div>
+        <div class="content">
+            <div class="icon-bg icon-jiagou-big-bg">
+
+            </div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-jiagou-big">
+
+            </div>
+        </div>
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div class="group-content">
+                        <p>1、业务需求系统分析，提出技术研究及可行性报告；</p>
+
+                        <p>2、结合需求设计高扩展性、高性能、安全、稳定、可靠的技术系统 ；</p>
+
+                        <p>3、可以通过配置实现业务需求的变化，跟踪并研究最新技术并应用于产品 ；</p>
+
+                        <p>4、指导研发工程师的产品开发和技术研究工作，解决各类技术疑难问题，形成良好的研发氛围，提升团队整体技术水平。</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div class="group-content">
+                        <p>1、5年以上Java开发经验，2年以上架构设计、管理经验；</p>
+
+                        <p>2、对数据库的基本理论和内部实现机制有深刻的理解，能够熟练应用MySQL/NoSQL，有实际大数据量的数据库设计经验；</p>
+
+                        <p>3、有丰富的实际系统运营经验，有较强的性能诊断，故障排查能力；在分布式缓存，分布式数据库，高可用，高并发系统构建等，至少有一个方向研究的比较深入；</p>
+
+                        <p>4、良好的逻辑思维能力，熟悉业务抽象和数据模型设计，具有很强的分析问题和解决问题的能力，对解决具有挑战性问题充满激情。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 技术总监  开发 -->
+    <div class="role-info-inner jszj">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-jszj"></div>
+        </div>
+
+        <div class="info-tips info-jszj"></div>
+        <div class="content">
+            <div class="icon-bg icon-jszj-big-bg">
+
+            </div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-jszj-big">
+
+            </div>
+        </div>
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div class="group-content">
+                        <p>1、深入理解互联网及移动互联网，支持移动、PC相关的技术研发工作，辅助产品做出正确决策； </p>
+
+                        <p>2、全面负责研发团队的建设，包括系统架构设计、建设、维护、规范、安全等相关技术的管理工作； </p>
+
+                        <p>3、指导并参与核心系统的设计与开发实施，组织解决项目开发过程中的重大技术问题。</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div class="group-content">
+                        <p>1、6年以上互联网企业技术开发及管理经验，有大中型移动互联网项目研发经验者优先； </p>
+
+                        <p>
+                            2、有3年以上的J2EE项目开发经验，熟悉主流sql与nosql数据库，熟悉分布式数据缓存设计，熟悉apche、nginx、jboss等主流中间件，熟悉CDN\Varnish等HTTP代理中间件的应用；</p>
+
+                        <p>
+                            3、熟悉互联网领域主流技术框架，熟悉网站性能优化，具备优秀的架构设计与开发能力，对互联网格局有深刻理解和技术实现能力；具有开阔的技术视野、丰富的研发经验，对公司技术发展能提供决策性的建议。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 产品总监  开发 -->
+    <div class="role-info-inner chanpingzj">
+        <div class="header">
+            <div class="common-header"></div>
+            <div class="header-title role-size role-chanpingzj"></div>
+        </div>
+
+        <div class="info-tips info-chanpingzj"></div>
+        <div class="content">
+            <div class="icon-bg icon-chanpingzj-big-bg">
+
+            </div>
+            <div class="house-bg"></div>
+            <div class="icon-big icon-chanpingzj-big">
+
+            </div>
+        </div>
+        <div class="role-ability">
+            <div class="do-close btn-close"></div>
+            <div class="content">
+                <div class="group">
+                    <div class="tips tip-role-ability"></div>
+                    <div class="group-content">
+                        <p>1、结合公司发展战略，全面策划及统筹产品的发展规划，明晰定位、目标、策略并落实实施； </p>
+
+                        <p>2、对客户端产品各项数据指标的实现负责，管理团队、协调产品线内外部关系、合理分配资源确保完成公司下达的年度工作目标； </p>
+
+                        <p>3、把握全球移动互联网发展趋势，分析跟踪竞争对手，定期完成分析报告或产品竞争战略和计划； </p>
+
+                        <p>4、分析上线产品的运营数据，定期组织分析、撰写产品运营分析报告，提出产品改进意见，不断完善在线产品、持续改善用户体验；</p>
+
+                        <p>5、负责提出新产品创意，组织、参与、指导产品市场调研和产品规划，并制定推广策略。</p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="tips tip-role-need"></div>
+                    <div class="group-content">
+                        <p>1、5年以上大型互联网企业工作经验，3年以上产品策划及产品研发管理经验； </p>
+
+                        <p>2、对行业的未来发展有清晰完整的见解； </p>
+
+                        <p>3、了解移动互联网行业产品发展动态及竞争对手的最新动态； </p>
+
+                        <p>4、有成功的客户端产品管理或策划案例者优先。</p>
+                    </div>
+                </div>
+                <div class="sure-btn-inner toFormPage"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="sure-btn" id="showRoleAbility"></div>
+    </div>
+</div>
+
+<!-- 角色能力-->
+
+<!-- 表单提交页面 -->
+<div class="wrapper form-page hide" id="formPage">
+    <div class="header">
+        <div class="common-header"></div>
+        <div class="header-title role-size btn-ability"></div>
+    </div>
+    <div class="content">
+        <div class="group">
+            <div class="tips tip1"></div>
+            <div class="group-input">
+                <input type="text" name="name" maxlength="20">
+            </div>
+        </div>
+        <div class="group">
+            <div class="tips tip2"></div>
+            <div class="group-input">
+                <input type="tel" name="telephone" maxlength="11">
+            </div>
+        </div>
+        <div class="group">
+            <div class="tips tip3"></div>
+            <div class="group-input">
+                <select name="wantRole" id="selectRole">
+                    <option value="chanpingjl">产品经理</option>
+                    <option value="qianduan">前端开发工程师</option>
+                    <option value="android">Android开发工程师</option>
+                    <option value="ios">IOS开发工程师</option>
+                    <option value="shuju">大数据开发工程师</option>
+                    <option value="java">JAVA开发工程师</option>
+                    <option value="test">软件测试工程师</option>
+                    <option value="jiaohu">交互设计师</option>
+                    <option value="shijue">视觉设计师</option>
+                    <option value="jiagou">资深架构师</option>
+                    <option value="jszj">技术总监</option>
+                    <option value="chanpingzj">产品总监</option>
+                </select>
+            </div>
+        </div>
+        <div class="group">
+            <div class="tips tip4"></div>
+            <div class="group-input">
+                <div class="group-input">
+                    <input type="text" name="workAge">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="btn btn-submit2" id="submitBtn"></div>
+    </div>
+</div>
+
+<div class="wrapper success-page hide" id="successPage">
+    <div class="content">
+
+    </div>
+    <div class="footer">
+        <div class="btn btn-share"></div>
+        <div class="btn btn-home"></div>
+    </div>
+</div>
+
+<!-- 分享  -->
+<div class="wrapper share-page hide" id="sharePage">
+    <div class="content">
+
+    </div>
+    <div class="footer">
+        <div class="btn btn-ikonw"></div>
+    </div>
+</div>
+
+<div class="do-back btn-back" id="doBack"></div>
+<div class="do-share btn-share" id="doShare"></div>
+<div class="do-music btn-music-close" id="doMusic"></div>
+
+
+<div class="wrapper error-page hide" id="errorTips">
+    <div class="content">
+        <p class="tip1">提交失败</p>
+
+        <p class="tip2"></p>
+
+        <div class="btn" id="errorTipsHide">
+            确定
+        </div>
+    </div>
+</div>
+
+<div class="music-div" style="position: absolute;width: 0;height: 0; overflow:hidden;left: 0; top: 0">
+    <audio src="bgm2.mp3" autoplay="autoplay" loop="loop" id="J_audio"></audio>
+</div>
+
+<div class="shrinkLabel"></div>
+<script src="//res.suning.cn/public/v5/js/zepto/1.1.4/app.js"></script>
+<script src="//res.suning.cn/public/v3/js/lazyelem.min.js?2017082803"></script>
+<script src="./js/index.js?v=3"></script>
+
+<!-- 微信分享开始 -->
+<script type="text/javascript">
+    // 标题
+    var _title = '频频年终团灭吃不了鸡得不了奖？也许你需要换一个队友';
+    // 描述
+    var _content = '这个春天和世界五百强来一场约会';
+    // 图片地址
+    var _image = 'http://sale.suning.com/zq/wap20181/images/wx-share2.jpg';
+
+    $.loadMod(MOD_URL.weixin).done(function () {
+        wxShare.config({
+            // 朋友圈数据
+            title: _title,
+            desc: _content,
+            link: window.location.href,
+            imgUrl: _image
+        }).loadJWeixin(function () {
+        });
+    });
+
+    $.base.appShare(_title, _content, _image);
+
+    // 懒加载方法，需要配合 <img data-src="真实图片地址" /> 使用
+    $("html").lazyload();
+</script>
+<!-- 微信分享结束 -->
+<script type="text/javascript">
+    $.loadScript({loadGa: true})
+</script>
+</body>
+</html>

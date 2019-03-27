@@ -1,0 +1,12 @@
+@function px2rem($px) {
+  @return $px / (25*2) * 1rem;
+}
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}

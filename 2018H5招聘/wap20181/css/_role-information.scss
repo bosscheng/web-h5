@@ -1,0 +1,315 @@
+.role-information {
+  background: url("../images/main-bg.png") no-repeat center;
+  background-size: 100% 100%;
+
+  .info-tips {
+    position: absolute;
+    left: 50%;
+    margin-left: px2rem(-224);
+    top: px2rem(250);
+    width: px2rem(448);
+    height: px2rem(114);
+  }
+
+  .role-info-inner {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    width: 100%;
+    height: px2rem(800);
+    position: absolute;
+    left: 0;
+    bottom: px2rem(50);
+
+    > .icon-big {
+      width: 100%;
+      position: relative;
+      left: 150%;
+      transform: translatex(-50%);
+      transition: left .5s ease-in;
+      // display: none;
+
+      &.do-show {
+        left: 50%;
+        // display: block;
+      }
+    }
+
+    .house-bg {
+      position: absolute;
+      bottom: 0;
+      height: px2rem(368);
+      width: 100%;
+      background: url("../images/house-bg.png") no-repeat center;
+      background-size: 100% 100%;
+      transform: scale(0);
+      transition: transform 0.5s ease-in;
+      &.normal-show {
+        transform: scale(1);
+      }
+    }
+
+    .icon-bg{
+      transform: scale(0);
+      transition: transform 0.5s ease-in;
+      &.normal-show {
+        transform: scale(1);
+      }
+    }
+
+
+    .icon-chanpingjl-big {
+      width: px2rem(398);
+      height: px2rem(673);
+      //margin: 0 auto;
+    }
+
+    .icon-android-big {
+      width: px2rem(367);
+      height: px2rem(688);
+      //margin: 0 auto;
+    }
+
+    .icon-ios-big {
+      width: px2rem(398);
+      height: px2rem(703);
+      // margin: 0 auto;
+    }
+
+    .icon-shuju-big {
+      width: px2rem(351);
+      height: px2rem(688);
+      //margin: 0 auto;
+    }
+
+    .icon-java-big {
+      width: px2rem(535);
+      height: px2rem(669);
+      //margin: 0 auto;
+    }
+
+    .icon-test-big {
+      width: px2rem(261);
+      height: px2rem(679);
+      //margin: 0 auto;
+    }
+
+    //
+    .icon-jiaohu-big {
+      width: px2rem(331);
+      height: px2rem(689);
+      //margin: 0 auto;
+    }
+
+    .icon-shijue-big {
+      width: px2rem(359);
+      height: px2rem(691);
+      //margin: 0 auto;
+    }
+
+    .icon-jiagou-big {
+      width: px2rem(359);
+      height: px2rem(682);
+      //margin: 0 auto;
+    }
+
+    .icon-jszj-big {
+      width: px2rem(293);
+      height: px2rem(685);
+      //margin: 0 auto;
+    }
+
+    .icon-qianduan-big {
+      width: px2rem(466);
+      height: px2rem(700);
+      //margin: 0 auto;
+    }
+
+    .icon-chanpingzj-big {
+      width: px2rem(521);
+      height: px2rem(686);
+      //margin: 0 auto;
+    }
+
+    // bg -start
+    .icon-chanpingjl-big-bg {
+      width: px2rem(488);
+      height: px2rem(456);
+      position: absolute;
+      left: px2rem(115);
+      top: px2rem(145);
+      background: url("../images/icon-chanpingjl-big-bg.png") no-repeat center;
+      background-size: contain;
+    }
+
+    .icon-qianduan-big-bg {
+      width: px2rem(609);
+      height: px2rem(616);
+      position: absolute;
+      left: px2rem(75);
+      top: 0;
+      background: url("../images/icon-qianduan-big-bg.png") no-repeat center;
+      background-size: contain;
+    }
+
+    .icon-android-big-bg {
+      width: px2rem(576);
+      height: px2rem(576);
+      position: absolute;
+      left: px2rem(125);
+      top: px2rem(75);
+      background: url("../images/icon-android-big-bg.png") no-repeat center;
+      background-size: contain;
+    }
+
+    .icon-ios-big-bg {
+      width: px2rem(750);
+      height: px2rem(517);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url("../images/icon-ios-big-bg.png") no-repeat center;
+      background-size: contain;
+    }
+
+    .icon-shuju-big-bg {
+      width: px2rem(712);
+      height: px2rem(436);
+      position: absolute;
+      left: px2rem(50);
+      top: px2rem(50);
+      background: url("../images/icon-shuju-big-bg.png") no-repeat center;
+      background-size: contain;
+    }
+
+    .icon-java-big-bg {
+      width: 100%;
+      height: px2rem(465);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url("../images/icon-java-big-bg.png") no-repeat center;
+      background-size: 100% 100%;
+    }
+
+    .icon-test-big-bg {
+      width: 100%;
+      height: px2rem(517);
+      position: absolute;
+      left: 0;
+      top: px2rem(110);
+      background: url("../images/icon-test-big-bg.png") no-repeat center;
+      background-size: 100% 100%;
+    }
+
+    .icon-jiaohu-big-bg {
+      width: px2rem(710);
+      height: px2rem(492);
+      position: absolute;
+      left: px2rem(50);
+      top: px2rem(50);
+      background: url("../images/icon-jiaohu-big-bg.png") no-repeat center;
+      background-size: contain;
+    }
+
+    .icon-shijue-big-bg {
+      width: px2rem(710);
+      height: px2rem(492);
+      position: absolute;
+      left: px2rem(25);
+      top: px2rem(50);
+      background: url("../images/icon-shijue-big-bg.png") no-repeat center;
+      background-size: contain;
+    }
+
+    .icon-jiagou-big-bg {
+      width: px2rem(710);
+      height: px2rem(492);
+      position: absolute;
+      left: px2rem(50);
+      top: px2rem(50);
+      background: url("../images/icon-jiagou-big-bg.png") no-repeat center;
+      background-size: contain;
+    }
+
+    .icon-jszj-big-bg {
+      width: px2rem(710);
+      height: px2rem(492);
+      position: absolute;
+      left: px2rem(15);
+      top: px2rem(75);
+      background: url("../images/icon-jszj-big-bg.png") no-repeat center;
+      background-size: contain;
+    }
+
+    .icon-chanpingzj-big-bg {
+      width: px2rem(710);
+      height: px2rem(492);
+      position: absolute;
+      left: px2rem(25);
+      top: px2rem(25);
+      background: url("../images/icon-chanpingzj-big-bg.png") no-repeat center;
+      background-size: contain;
+    }
+
+    // bg - end
+
+    // ¸¡¶¯µÄÊé¼®
+    .icon-qianduan-book {
+      position: absolute;
+      width: px2rem(110);
+      height: px2rem(224);
+      top: px2rem(100);
+      right: px2rem(35);
+      background: url("../images/icon-qianduan-2.png") no-repeat center;
+      background-size: contain;
+      animation: bounce 1.5s linear 0.6s infinite;
+      visibility: hidden;
+    }
+
+    .icon-android-balloon {
+      position: absolute;
+      width: px2rem(214);
+      height: px2rem(214);
+      top: px2rem(125);
+      right: px2rem(135);
+      background: url("../images/icon-andriod-2.png") no-repeat center;
+      background-size: contain;
+      animation: bounce2 1.5s linear 0.6s infinite;
+      visibility: hidden;
+    }
+
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    .sure-btn {
+      width: px2rem(346);
+      height: px2rem(102);
+      background: url("../images/btn-ability.png") no-repeat center;
+      background-size: contain;
+      margin: 0 auto;
+      margin-bottom: px2rem(30);
+    }
+  }
+
+  .role-ability {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 110%;
+    left: 0;
+    transition: top .5s ease-in;
+    display: none;
+
+    &.aniShow {
+      top: px2rem(150);
+    }
+  }
+
+}

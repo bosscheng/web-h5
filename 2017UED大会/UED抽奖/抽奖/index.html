@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>抽奖</title>
+    <style type="text/css">
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            background: url("img/lottery.png") no-repeat center center;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+        .contain{
+            width: 60%;
+            height: 70%;
+            position: relative;
+            left: 20%;
+            top: 20%;
+            z-index: 1;
+        }
+        .title{
+            width: 36vw;
+            height: 5.3vw;
+            position: relative;
+            left: 20%;
+            background: url(img/wenzi.png)no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .lottery {
+            position: relative;
+            width: 36vw;
+            height: 17vw;
+            left: 20%;
+            top: 4%;
+            background: url(img/numArea.png)no-repeat center center;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+        .numArea {
+            width: 100%;
+            height: 100%;
+            font-size: 14vw;
+            color: #E62072;
+            font-family: "Arial Black";
+        }
+        .numArea div{
+            float: left;
+            width: 11vw;
+            height: 15.5vw;
+            line-height: 15vw;
+            text-align: center;
+            margin: 2% 0 2% 1%;
+            background: #ffffff;
+        }
+        .numArea1{
+            margin-left: 3% !important;
+        }
+        #stop {
+            display: none;
+        }
+        .buttonArea {
+            position: relative;
+            top: 10%;
+        }
+        #start,#stop{
+            width: 19vw;
+            height: 3.7vw;
+            line-height: 3.7vw;
+            margin-left: calc(50% - 9.5vw);
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.6vw;
+            font-family: PingFangSC-Regular, sans-serif;
+            background: #E62072;
+            cursor: pointer;
+        }
+        .radio{
+            position: absolute;
+        }
+        .radio1{
+            width: 10vw;
+            height: 10vw;
+            left: 4vw;
+            top: 4vw;
+            background: url("img/raido1.png")no-repeat center center;
+            background-size: 100% 100%;
+            z-index: 1;
+        }
+        .radio2{
+            width: 16vw;
+            height: 16vw;
+            right: 0;
+            top: 0;
+            background: url("img/radio2.png")no-repeat center center;
+            background-size: 100% 100%;
+            z-index: 1;
+        }
+        .radio3{
+            width: 25vw;
+            height: 25vw;
+            left: 0;
+            bottom: 0;
+            background: url("img/radio3.png")no-repeat center center;
+            background-size: 100% 100%;
+            z-index: 1;
+        }
+        .radio4{
+            width: 12vw;
+            height: 12vw;
+            right: 0;
+            bottom: 0;
+            background: url("img/radio4.png")no-repeat center center;
+            background-size: 100% 100%;
+            z-index: 1;
+        }
+        .wenzi2{
+            width: 50vw;
+            height: 3vw;
+            left: calc(50% - 25vw);
+            bottom: 2.5vw;
+            background: url("img/wenzi2.png")no-repeat center center;
+            background-size: 100% 100%;
+        }
+        .star1{
+            position: absolute;
+            width: 5vw;
+            padding-top: 6vw;
+            left: 22vw;
+            top: 0;
+            background: url(img/line3.png)no-repeat center center;
+            background-size: contain;
+            transform-origin: 100% 0;
+            animation: star-ani 3s infinite ease-out;
+            z-index: 0;
+        }
+        .star2{
+            position: absolute;
+            width: 5vw;
+            padding-top: 6vw;
+            right: 16vw;
+            top: 10vw;
+            background: url(img/line3.png)no-repeat center center;
+            background-size: contain;
+            transform-origin: 100% 0;
+            animation: star-ani 3.5s infinite ease-out;
+            z-index: 0;
+        }
+        .star3{
+            position: absolute;
+            width: 5vw;
+            padding-top: 6vw;
+            left: 34vw;
+            top: 16vw;
+            background: url(img/line3.png)no-repeat center center;
+            background-size: contain;
+            transform-origin: 100% 0;
+            animation: star-ani 2.5s infinite ease-out;
+            z-index: 0;
+        }
+        @keyframes star-ani {
+            0% {
+                opacity: 1;
+                transform: scale(1) rotate(0) translate3d(0, 0, 0);
+                -webkit-transform: scale(1) rotate(0) translate3d(0, 0, 0);
+                -moz-transform: scale(1) rotate(0) translate3d(0, 0, 0);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+                -webkit-transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+                -moz-transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+            }
+        }
+    </style>
+</head>
+<body onkeydown="keydown();">
+<div class="main">
+    <div class="radio radio1"></div>
+    <div class="radio radio2"></div>
+    <div class="radio radio3"></div>
+    <div class="radio radio4"></div>
+    <div class="radio wenzi2"></div>
+    <div class="star1"></div>
+    <div class="star2"></div>
+    <div class="star3"></div>
+    <div class="contain">
+        <div class="title"></div>
+        <div class="lottery">
+            <div class="numArea">
+                <div class="numArea1">0</div>
+                <div class="numArea2">0</div>
+                <div class="numArea3">0</div>
+            </div>
+        </div>
+        <div class="buttonArea">
+            <div id="start">抽奖</div>
+            <div id="stop">停止抽奖</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/lottery.js"></script>
+</body>
+</html>

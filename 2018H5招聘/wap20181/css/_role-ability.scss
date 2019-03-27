@@ -1,0 +1,50 @@
+.role-ability{
+
+  .content{
+    width: px2rem(690);
+    height: px2rem(1100);
+    background: url("../images/role-ability-content-bg.png") no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+
+    .group{
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: px2rem(60);
+      padding-right: px2rem(40);
+
+      &:first-child{
+        padding-top: px2rem(120);
+      }
+
+      .group-content{
+        width: 100%;
+        height: px2rem(350);
+        overflow-y: auto;
+      }
+
+      p{
+        font-size: px2rem(28);
+        font-family: "Microsoft Yahei";
+      }
+    }
+
+    .tips{
+      width: px2rem(245);
+      height: px2rem(72);
+    }
+  }
+
+  .sure-btn-inner {
+    width: px2rem(292);
+    height: px2rem(89);
+    background: url("../images/role-ability-tip3.png") no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+    margin-top: px2rem(25);
+  }
+
+}

@@ -1,0 +1,273 @@
+.page-main {
+  background: url("../images/bg-loading2.jpg") no-repeat center;
+  background-size: cover;
+  background-position: left 0 bottom 0;
+  transition: background-image .3s ease-out .6s;
+  &.do-show {
+    background-image: url("../images/bg-bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 0;
+  }
+
+  // logo
+  .main-logo {
+    margin: 0 auto;
+    margin-top: px2rem(132);
+    width: px2rem(172);
+    height: px2rem(187);
+    background: url("../images/main-logo.png") no-repeat center;
+    background-size: cover;
+    transition: margin-top .3s ease-out;
+
+    &.do-show {
+      margin-top: px2rem(36);
+    }
+  }
+
+  // title
+  .main-title {
+    margin: 0 auto;
+    margin-top: px2rem(20);
+    width: px2rem(495);
+    height: px2rem(40);
+    background: url("../images/main-title.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+    transition: left .3s ease-out .3s;
+    left: -150%;
+    &.do-show {
+      left: 0;
+    }
+  }
+
+  .main-shanguang-top {
+    position: relative;
+    top: px2rem(-250);
+    width: px2rem(540);
+    height: px2rem(540);
+    margin: 0 auto;
+    background: url("../images/main-shanguang-top.png") no-repeat center;
+    mix-blend-mode: screen;
+    background-size: cover;
+    &.do-show {
+      animation: rotate 0.5s linear;
+    }
+  }
+
+  .main-pic1 {
+    width: 100%;
+    margin-top: px2rem(-25);
+    height: px2rem(329);
+    background: url("../images/main-pic1.png") no-repeat;
+    background-size: contain;
+    background-position: left 0 bottom 0;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease-out 1.5s;
+    &.do-show {
+      opacity: 1;
+    }
+  }
+
+  //
+  .main-mask {
+    width: 100%;
+    height: 100%;
+    background: url("../images/main-mask.png");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.1;
+    transition: opacity 1s ease-out;
+    &.do-show{
+      opacity: 1;
+    }
+
+  }
+
+  //
+  .main-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: px2rem(876);
+    //background: url("../images/main-people.png") no-repeat;
+    //background-size: contain;
+    //background-position: left 0 bottom px2rem(-876);
+    //transition: background-position .3s ease-out .6s;
+    //
+    /*&.do-show {
+      //background-position: left 0 bottom px2rem(-15);
+    }*/
+
+    //
+    .main-people {
+      position: absolute;
+      left: 0;
+      top: px2rem(876);
+      height: px2rem(1005);
+      width: px2rem(654);
+      background: url("../images/main-people.png") no-repeat;
+      background-size: cover;
+      bottom: px2rem(-1005);
+      transition: top .3s ease-out .6s;
+
+      &.do-show {
+        top: 0;
+      }
+    }
+
+    .main-p1 {
+      width: px2rem(596);
+      height: px2rem(150);
+      background: url("../images/main-p1.png") no-repeat center;
+      background-size: cover;
+      margin-top: px2rem(325);
+      margin-left: px2rem(90);
+      position: relative;
+      left: -150%;
+      transition: left .3s ease-out .9s;
+
+      &.do-show {
+        left: 0;
+      }
+    }
+
+    .main-p2 {
+      width: px2rem(493);
+      height: px2rem(139);
+      background: url("../images/main-p2.png") no-repeat center;
+      background-size: cover;
+      margin-left: px2rem(210);
+      margin-top: px2rem(-60);
+      position: relative;
+      left: 150%;
+      transition: left .3s ease-out .9s;
+      &.do-show {
+        left: 0;
+      }
+    }
+
+    .main-animal {
+      position: absolute;
+      width: px2rem(149);
+      height: px2rem(180);
+      background: url("../images/main-animal.png") no-repeat center;
+      background-size: cover;
+      right: px2rem(-149);
+      top: px2rem(244);
+      transition: right .3s ease-out 1.2s;
+
+      &.do-show {
+        right: px2rem(80);
+      }
+    }
+
+    .main-sg {
+      &.do-show {
+        visibility: visible;
+        animation: flicker 1s linear infinite;
+      }
+    }
+
+    //
+    .main-shanguang {
+      position: absolute;
+      top: px2rem(375);
+      left: px2rem(10);
+      width: 100%;
+      height: px2rem(310);
+      background: url("../images/main-shanguang.png") no-repeat center;
+      mix-blend-mode: screen;
+      background-size: cover;
+      z-index: 1;
+      visibility: hidden;
+
+    }
+
+    .main-shanguang2 {
+      position: absolute;
+      top: px2rem(240);
+      right: px2rem(-20);
+      width: px2rem(536);
+      height: px2rem(325);
+      background: url("../images/main-shanguang-top.png") no-repeat center;
+      mix-blend-mode: screen;
+      background-size: cover;
+      visibility: hidden;
+
+    }
+
+    .main-shanguang3 {
+      position: absolute;
+      top: px2rem(180);
+      left: px2rem(-160);
+      width: px2rem(536);
+      height: px2rem(325);
+      background: url("../images/main-shanguang-top.png") no-repeat center;
+      mix-blend-mode: screen;
+      background-size: cover;
+      visibility: hidden;
+
+    }
+
+    .main-shanguang4 {
+      position: absolute;
+      top: px2rem(375);
+      right: px2rem(-140);
+      width: px2rem(536);
+      height: px2rem(325);
+      background: url("../images/main-shanguang-top.png") no-repeat center;
+      mix-blend-mode: screen;
+      background-size: cover;
+      visibility: hidden;
+    }
+  }
+
+  .main-footer {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: px2rem(70);
+    height: px2rem(78);
+    width: 100%;
+
+    .big-btn {
+      margin: 0 auto;
+      width: px2rem(400);
+      height: px2rem(78);
+      background: url("../images/btn/start-game.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .main-btn-inner {
+      width: px2rem(628);
+      height: 100%;
+      margin: 0 auto;
+
+      div {
+        width: px2rem(289);
+        height: 100%;
+        &:active {
+          transform: scale(.95)
+        }
+      }
+
+      .left-btn {
+        float: left;
+        background: url("../images/btn/xwfc.png") no-repeat center;
+        background-size: cover;
+      }
+
+      .right-btn {
+        float: right;
+        background: url("../images/btn/with-pk.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,304 @@
+.page-pk-process {
+  background: url("../images/pk-bg.png") no-repeat center;
+  background-size: cover;
+
+  .process-head {
+    margin: 0 auto;
+    margin-top: px2rem(210);
+    width: px2rem(622);
+    position: relative;
+    height: px2rem(264);
+
+    .head-temp {
+      p {
+        height: px2rem(50);
+        width: px2rem(178);
+        line-height: px2rem(50);
+        font-size: px2rem(30);
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .head-pic {
+        width: px2rem(167);
+        height: px2rem(225);
+        background: url("../images/pk-process-head-wrap.png") no-repeat center;
+        background-size: cover;
+
+        overflow: hidden;
+        position: relative;
+
+        img {
+          position: absolute;
+          width: px2rem(349);
+          height: px2rem(530);
+          left: px2rem(-96);
+          top: px2rem(-80);
+
+        }
+      }
+
+      .head-pic-inner {
+        width: px2rem(158);
+        height: px2rem(217);
+        margin-left: px2rem(5);
+        margin-top: px2rem(2);
+        -webkit-mask-box-image: url("../images/pk-process-head-wrap2.png");
+      }
+
+    }
+
+    .left-temp {
+      float: left;
+      position: relative;
+
+      .red-name {
+        color: #eef8ff;
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+        &.do-show {
+          opacity: 1;
+        }
+      }
+
+      .head-pic {
+        //  border-color: #4245ae;
+      }
+
+      &.do-show {
+        animation: crash-left 1s linear 1;
+      }
+    }
+
+    .right-temp {
+      float: right;
+      position: relative;
+      .blue-name {
+        color: #fcdccd;
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+
+        &.do-show {
+          opacity: 1;
+        }
+      }
+
+      .head-pic {
+        // border-color: #a1479f;
+      }
+
+      &.do-show {
+        animation: crash-right 1s linear 1;
+      }
+    }
+  }
+
+  .fire-football {
+    position: absolute;
+    margin-left: px2rem(-230);
+    width: px2rem(332);
+    height: px2rem(260);
+    background: url("../images/fire-football.png") no-repeat center;
+    background-size: cover;
+    left: px2rem(-332);
+    top: px2rem(-332);
+    transform: scale(0.1);
+    transition: transform 0.2s ease-in, left 0.2s ease-in, top 0.2s ease-in;
+
+    &.do-show {
+      left: 50%;
+      top: px2rem(170);
+      transform: scale(1);
+    }
+
+  }
+
+  .vs-icon {
+    position: absolute;
+    left: 50%;
+    top: px2rem(340);
+    margin-left: px2rem(-115);
+    width: px2rem(229);
+    height: px2rem(141);
+    background: url("../images/vs-icon.png") no-repeat center;
+    background-size: cover;
+    transform: scale(5);
+    transition: transform 0.2s ease-in 0.4s;
+    z-index: 1;
+    &.do-show {
+      transform: scale(1);
+    }
+  }
+
+  .process-tips {
+    margin: 0 auto;
+    position: relative;
+    margin-top: px2rem(110);
+    margin-bottom: px2rem(74);
+    width: px2rem(345);
+    height: px2rem(32);
+    background: url("../images/zhanli.png") no-repeat center;
+    background-size: cover;
+    left: 150%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in 0.6s, left 0.2s ease-in 0.6s;
+    &.do-show {
+      opacity: 1;
+      left: 0;
+    }
+  }
+
+  .process-body {
+    width: px2rem(582);
+    height: px2rem(295);
+    margin: 0 auto;
+
+    > div {
+      width: px2rem(220);
+      height: 100%;
+    }
+
+    .body-left {
+      float: left;
+      color: #d9f1fb;
+      position: relative;
+      left: -150%;
+      transition: left 0.2s ease-in 0.8s;
+
+      &.do-show {
+        left: 0;
+      }
+
+      .power-title {
+        float: left;
+      }
+      .power-line {
+        float: right;
+      }
+      .power-line-inner {
+        background: url("../images/process-line-left.png");
+        background-size: cover;
+      }
+    }
+
+    .body-right {
+      float: right;
+      position: relative;
+      color: #ffed87;
+      left: 150%;
+      transition: left 0.2s ease-in 0.8s;
+
+      &.do-show {
+        left: 0;
+      }
+      .power-title {
+        float: right;
+      }
+      .power-line {
+        float: left;
+      }
+
+      .power-line-inner {
+        background: url("../images/process-line-red.png");
+        background-size: cover;
+      }
+    }
+
+    .power-line {
+      width: px2rem(142);
+      height: px2rem(12);
+      background: url("../images/process-line1.png") no-repeat center;
+      background-size: 100% 100%;
+      margin-top: px2rem(12);
+      position: relative;
+
+      .power-line-inner {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 99%;
+        width: 0;
+        transition: width .5s ease-in 1.0s;
+      }
+    }
+
+    .power-item {
+      height: px2rem(34);
+      line-height: px2rem(34);
+      font-size: px2rem(32);
+      margin-top: px2rem(30);
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .process-footer {
+    margin: 0 auto;
+    margin-top: px2rem(50);
+    width: px2rem(595);
+    height: px2rem(106);
+    background: url("../images/fen.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+    bottom: -150%;
+    opacity: 0.1;
+    transition: bottom .5s ease-in 1.5s, opacity 0.5s ease-in 1.5s;
+
+    &.do-show {
+      bottom: 0;
+      opacity: 1;
+    }
+
+    .red-national {
+      position: absolute;
+      left: px2rem(26);
+      top: px2rem(15);
+      width: px2rem(59);
+      height: px2rem(59);
+    }
+
+    .team-pk {
+      position: absolute;
+      top: px2rem(25);
+      width: px2rem(109);
+      height: px2rem(36);
+      line-height: px2rem(36);
+      color: #eef8ff;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .red-team {
+      left: px2rem(90);
+      text-align: left;
+    }
+
+    .blue-team {
+      right: px2rem(90);
+      text-align: right;
+    }
+
+    .blue-national {
+      position: absolute;
+      right: px2rem(26);
+      top: px2rem(15);
+      width: px2rem(59);
+      height: px2rem(59);
+    }
+  }
+
+  //
+  .process-step {
+    width: px2rem(147);
+    height: px2rem(35);
+    position: absolute;
+    bottom: px2rem(20);
+    right: px2rem(30);
+    background: url("../images/process-step.png") no-repeat center;
+    background-size: cover;
+  }
+}

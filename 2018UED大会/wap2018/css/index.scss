@@ -1,0 +1,498 @@
+@import "core";
+@import "utils";
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+// 公共部分
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: url("../image/wrap-bg.jpg");
+  background-size: cover;
+}
+
+.hide {
+  display: none;
+  z-index: 5;
+}
+
+.show {
+  display: block;
+  z-index: 10;
+}
+
+.active {
+  display: block;
+  z-index: 15;
+}
+
+.next-page {
+  position: fixed;
+  z-index: 100;
+  width: px2rem(42);
+  height: px2rem(33);
+  background: url("../image/next-page.png") no-repeat center;
+  background-size: 100% 100%;
+  left: 50%;
+  margin-left: px2rem(-21);
+  bottom: px2rem(50);
+}
+
+.head-pic-lyx {
+  background: url("../image/head-pic-lyx.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.head-pic-wmq {
+  background: url("../image/head-pic-wmq.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.head-pic-zqc {
+  background: url("../image/head-pic-zqc.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.head-pic-lx {
+  background: url("../image/head-pic-lx.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.head-pic-wp {
+  background: url("../image/head-pic-wp.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.head-pic-hj {
+  background: url("../image/head-pic-hj.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.head-pic-gw {
+  background: url("../image/head-pic-gw.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+// 首页
+.page-home {
+  .logo {
+    position: absolute;
+    width: px2rem(395);
+    height: px2rem(40);
+    background: url("../image/home-logo.png") no-repeat center;
+    background-size: 100% 100%;
+    left: px2rem(30);
+    top: px2rem(50);
+  }
+
+  .title {
+    width: 100%;
+    height: px2rem(395);
+    background: url("../image/home-title.png") no-repeat center;
+    background-size: 100% 100%;
+    margin-top: px2rem(221);
+  }
+
+  .little-box {
+    width: px2rem(71);
+    height: px2rem(80);
+    background: url("../image/home-box.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: px2rem(106);
+  }
+
+  p {
+    font-size: px2rem(30);
+    line-height: px2rem(30);
+    text-align: center;
+    color: #6584a7;
+
+    &.p1 {
+      margin-bottom: px2rem(30);
+      margin-top: px2rem(106);
+    }
+
+    span {
+      display: inline-block;
+      width: px2rem(30);
+    }
+  }
+
+  .line {
+    width: px2rem(142);
+    height: px2rem(15);
+    background: url("../image/home-line.png") no-repeat center;
+    background-size: 100% 100%;
+    float: right;
+    margin-top: px2rem(12);
+    margin-right: px2rem(184);
+  }
+}
+
+// 大会介绍
+.page-introduce {
+
+  .title {
+    width: px2rem(282);
+    height: px2rem(88);
+    background: url("../image/introduce-title.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: px2rem(50);
+  }
+
+  .word {
+    color: #fff;
+    font-size: px2rem(30);
+    margin-left: px2rem(80);
+    margin-right: px2rem(70);
+  }
+
+  .word1 {
+    margin-top: px2rem(94);
+  }
+
+  .introduce-pic1 {
+    margin-top: px2rem(26);
+    margin-bottom: px2rem(40);
+    width: px2rem(120);
+    height: px2rem(2);
+    background: url("../image/introduce-line1.png") no-repeat center;
+    background-size: 100% 100%;
+    margin-left: px2rem(16);
+  }
+
+  .word2 {
+
+  }
+
+  .introduce-pic2 {
+    margin-top: px2rem(28);
+    margin-bottom: px2rem(28);
+    width: px2rem(138);
+    height: px2rem(12);
+    background: url("../image/introduce-line2.png") no-repeat center;
+    background-size: 100% 100%;
+    margin-left: px2rem(150);
+  }
+  .word3 {
+
+  }
+}
+
+// 报名
+.page-signup {
+
+  p {
+    text-align: center;
+    font-size: px2rem(36);
+    color: #fff;
+  }
+  .p1 {
+    margin-top: px2rem(100);
+  }
+  .data {
+    width: px2rem(329);
+    height: px2rem(165);
+    background: url("../image/introduce-data.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: px2rem(165);
+  }
+
+  .p2 {
+    margin-top: px2rem(165);
+    span {
+      display: inline-block;
+      width: px2rem(14);
+    }
+  }
+
+  .p3 {
+    font-size: px2rem(24);
+    color: #ccc;
+  }
+
+  .p31 {
+    margin-top: px2rem(30);
+  }
+  .p32 {
+    margin-top: px2rem(10);
+  }
+
+  .pic1 {
+    width: px2rem(491);
+    height: px2rem(12);
+    background: url("../image/introduce-pic.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+  }
+
+  .qcord {
+    display: block;
+    width: px2rem(320);
+    height: px2rem(320);
+    margin: 0 auto;
+    margin-top: px2rem(18);
+  }
+}
+
+// 往期回顾
+.page-review {
+  .title {
+    width: px2rem(463);
+    height: px2rem(88);
+    background: url("../image/review-title.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: px2rem(80);
+  }
+
+  .content {
+    margin-top: px2rem(50);
+    padding-left: px2rem(30);
+    padding-right: px2rem(30);
+    .left {
+      float: left;
+      width: px2rem(340);
+      height: px2rem(530);
+      background: url("../image/review-pic-1.jpg") no-repeat center;
+      background-size: 100% 100%;
+    }
+
+    .right {
+      float: right;
+      width: px2rem(340);
+
+      .p1 {
+        width: px2rem(340);
+        height: px2rem(260);
+        background: url("../image/review-pic-2.jpg") no-repeat center;
+        background-size: 100% 100%;
+        margin-bottom: px2rem(10);
+      }
+      .p2 {
+        width: px2rem(340);
+        height: px2rem(260);
+        background: url("../image/review-pic-3.jpg") no-repeat center;
+        background-size: 100% 100%;
+      }
+    }
+
+    .p3 {
+      width: px2rem(690);
+      height: px2rem(274);
+      background: url("../image/review-pic-4.jpg") no-repeat center;
+      background-size: 100% 100%;
+      margin-top: px2rem(10);
+    }
+
+  }
+}
+
+// 大会嘉宾
+.page-guest {
+  .title {
+    width: px2rem(495);
+    height: px2rem(88);
+    background: url("../image/guest-title.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: px2rem(80);
+  }
+
+  .content {
+    width: px2rem(642);
+    height: px2rem(766);
+    background: url("../image/guest-bg.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: px2rem(100);
+    position: relative;
+
+    .content-pic {
+      position: absolute;
+      width: px2rem(210);
+      height: px2rem(210);
+      left: 50%;
+      margin-left: px2rem(-105);
+      top: px2rem(-50)
+    }
+
+    > p {
+      text-align: center;
+      font-size: px2rem(30);
+      color: #ccc;
+    }
+
+    .name {
+      padding-top: px2rem(190);
+    }
+
+    .role {
+      margin-top: px2rem(10);
+      span {
+        display: inline-block;
+        color: #64a7f1;
+        margin-right: px2rem(20);
+      }
+    }
+
+    .description {
+      margin-left: px2rem(40);
+      margin-top: px2rem(20);
+      width: px2rem(580);
+      font-size: px2rem(30);
+      color: #ccc;
+    }
+
+  }
+
+}
+
+.page-schedule {
+  .title {
+    width: px2rem(474);
+    height: px2rem(88);
+    background: url("../image/schedule-title.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: px2rem(50);
+  }
+
+  .content {
+    width: px2rem(680);
+    margin: 0 auto;
+    margin-top: px2rem(20);
+    //
+    .am-pic {
+      width: px2rem(51);
+      height: px2rem(22);
+      background: url("../image/am.png") no-repeat center;
+      background-size: 100% 100%;
+      margin-bottom: px2rem(20);
+    }
+
+    //
+    .pm-pic {
+      width: px2rem(48);
+      height: px2rem(22);
+      background: url("../image/pm.png") no-repeat center;
+      background-size: 100% 100%;
+      margin-bottom: px2rem(20);
+    }
+
+    .pm {
+      margin-top: px2rem(20);
+    }
+
+    .item {
+      position: relative;
+      margin-bottom: px2rem(20);
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .item-time {
+      position: absolute;
+      left: 0;
+      color: #1aabfa;
+      font-size: px2rem(28);
+    }
+
+    .item-content {
+      margin-left: px2rem(172);
+      font-size: px2rem(28);
+      color: #fff;
+
+      p:last-child {
+        color: #999;
+        font-size: px2rem(24);
+      }
+    }
+  }
+}
+
+.page-host {
+  .title {
+    width: px2rem(501);
+    height: px2rem(88);
+    background: url("../image/host-title.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: px2rem(50);
+  }
+
+  .sub-title1 {
+    width: px2rem(156);
+    height: px2rem(40);
+    background: url("../image/host-sub-title1.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: px2rem(60);
+    margin-bottom: px2rem(30);
+    color: #1aaafa;
+    font-size: px2rem(30);
+    text-align: center;
+    line-height: px2rem(40);
+  }
+  .sub-title2 {
+    width: px2rem(261);
+    height: px2rem(40);
+    background: url("../image/host-sub-title2.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: px2rem(40);
+    margin-bottom: px2rem(20);
+    color: #1aaafa;
+    font-size: px2rem(30);
+    text-align: center;
+    line-height: px2rem(40);
+  }
+
+  .content {
+    width: px2rem(670);
+    margin: 0 auto;
+    color: #fff;
+    font-size: px2rem(30);
+  }
+
+}
+
+.page-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1a1f;
+
+  .content{
+    width: 100%;
+    height: px2rem(395);
+    background: url("../image/home-title.png") no-repeat center;
+    background-size: 100% 100%;
+    margin-top: px2rem(221);
+  }
+
+  .loading {
+    width: px2rem(100);
+    height: px2rem(100);
+
+    margin: 0 auto;
+    margin-top: px2rem(100);
+    background: url("../image/loading.gif") no-repeat center center;
+    background-size: contain;
+  }
+}

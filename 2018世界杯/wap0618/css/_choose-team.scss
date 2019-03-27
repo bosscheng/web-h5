@@ -1,0 +1,175 @@
+.page-choose-team {
+  background: url("../images/bg-bg2.jpg") no-repeat center;
+  background-size: cover;
+  background-position: left 0 bottom 0;
+  // background-position: left 0 bottom 0;
+
+  .page-title {
+    width: px2rem(667);
+    height: px2rem(110);
+    margin: 0 auto;
+    margin-top: px2rem(45);
+    background: url("../images/title_bg.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+
+    .title-icon {
+      position: absolute;
+      left: px2rem(100);
+      bottom: px2rem(10);
+      width: px2rem(85);
+      height: px2rem(135);
+      background: url("../images/suning_icon.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .title-content {
+      position: absolute;
+      left: px2rem(200);
+      top: px2rem(30);
+      width: px2rem(394);
+      height: px2rem(39);
+      background: url("../images/top_title.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .page-content {
+    width: px2rem(572);
+    margin: 0 auto;
+    margin-top: px2rem(-10);
+    .content-body {
+      width: 100%;
+      background: url("../images/middle_bg.png") round;
+      .content-inner {
+        position: relative;
+        padding-top: px2rem(20);
+        margin: 0 px2rem(6);
+        overflow: hidden;
+        .content-item {
+          height: px2rem(150);
+          position: relative;
+          transition: left .5s ease-in;
+        }
+        // 奇数
+        .content-item:nth-child(2n+1) {
+          background: url("../images/line_bg.png") no-repeat center;
+          background-size: cover;
+          left: 150%;
+          &.do-show {
+            left: 0;
+          }
+        }
+
+        // 偶数
+        .content-item:nth-child(2n) {
+          left: -150%;
+          &.do-show {
+            left: 0;
+          }
+        }
+
+        span {
+          box-sizing: border-box;
+          display: inline-block;
+          width: px2rem(248);
+          height: 100%;
+          opacity: 0.1;
+          transition: background-position .5s ease-in, opacity .5s ease-in .3s;
+          background-position: left 0 top px2rem(200);
+          &.do-show {
+            background-position: left 0 top px2rem(25);
+            opacity: 1;
+          }
+
+          &:first-child {
+            float: left;
+            margin-left: px2rem(24);
+          }
+          &:last-child {
+            float: right;
+          }
+          &:active {
+            transform: scale(.95)
+          }
+        }
+      }
+    }
+
+    .content-footer {
+      width: 100%;
+      height: px2rem(245);
+      background: url("../images/bottom_bg.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .page-footer {
+    position: absolute;
+    width: px2rem(303);
+    height: px2rem(244);
+    bottom: px2rem(30);
+    right: px2rem(-20);
+    background: url("../images/wolf4.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .icon11 {
+    background: url("../images/Spain_logo.png") no-repeat;
+    background-size: contain;
+    //background-position: left 0 top px2rem(25);
+
+  }
+
+  .icon12 {
+    background: url("../images/belgium_logo.png") no-repeat;
+    background-size: contain;
+    //background-position: left 0 top px2rem(25);
+  }
+
+  .icon21 {
+    background: url("../images/Argentina_logo.png") no-repeat;
+    background-size: contain;
+    //background-position: left 0 top px2rem(25);
+  }
+
+  .icon22 {
+    background: url("../images/germany_logo.png") no-repeat;
+    background-size: contain;
+    // background-position: left 0 top px2rem(25);
+  }
+  .icon31 {
+    background: url("../images/cloumbia_logo.png") no-repeat;
+    background-size: contain;
+    //background-position: left 0 top px2rem(25);
+  }
+  .icon32 {
+    background: url("../images/France.png") no-repeat;
+    background-size: contain;
+    //background-position: left 0 top px2rem(25);
+  }
+
+  .icon41 {
+    background: url("../images/portugal2_logo.png") no-repeat;
+    background-size: contain;
+    //background-position: left 0 top px2rem(25);
+  }
+
+  .icon42 {
+    background: url("../images/china_logo.png") no-repeat;
+    background-size: contain;
+    // background-position: left 0 top px2rem(25);
+  }
+
+  .icon51 {
+    background: url("../images/england_logo.png") no-repeat;
+    background-size: contain;
+    //background-position: left 0 top px2rem(25);
+  }
+
+  .icon52 {
+    background: url("../images/brazil_logo.png") no-repeat;
+    background-size: contain;
+    //background-position: left 0 top px2rem(25);
+  }
+}

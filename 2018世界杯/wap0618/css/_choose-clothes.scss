@@ -1,0 +1,145 @@
+.page-choose-clothes {
+  background: url("../images/bg-bg2.jpg") no-repeat center;
+  background-size: cover;
+  background-position: left 0 bottom 0;
+
+  .left-icon {
+    width: px2rem(190);
+    height: px2rem(61);
+    position: absolute;
+    left: px2rem(30);
+    top: px2rem(30);
+    background: url("../images/worldcup_logo3.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .right-icon {
+    position: absolute;
+    right: px2rem(30);
+    top: px2rem(30);
+  }
+
+  //
+  .clothes-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: px2rem(130);
+  }
+
+  .clothes {
+    width: px2rem(503);
+    height: px2rem(640);
+    margin: 0 auto;
+    margin-top: px2rem(175);
+    position: relative;
+  }
+
+  .text-name {
+    position: absolute;
+    height: px2rem(56);
+
+    input {
+      border: none;
+      border-bottom: 1px solid #1b1a1f;
+      height: 100%;
+      width: 100%;
+      line-height: 100%;
+      background: transparent;
+      //color: rgba(250, 250, 250, 0.5);
+      font-size: px2rem(28);
+      text-align: center;
+    }
+  }
+
+  .text-name1 {
+    top: px2rem(80);
+    left: px2rem(180);
+    width: px2rem(150);
+  }
+
+  .text-name2 {
+    bottom: px2rem(150);
+    left: px2rem(150);
+    width: px2rem(200);
+  }
+
+  .text-name2-tips {
+    position: absolute;
+    bottom: px2rem(90);
+    width: 100%;
+    font-size: px2rem(28);
+    text-align: center;
+    color: #ccc;
+  }
+
+  .choose-gender {
+    width: px2rem(284);
+    height: px2rem(60);
+    margin: 0 auto;
+    margin-top: px2rem(50);
+
+    > div {
+      width: px2rem(133);
+      height: 100%;
+      &:active {
+        transform: scale(.95)
+      }
+    }
+
+    .female {
+      float: right;
+      background: url("../images/woman_default.png") no-repeat center;
+      background-size: cover;
+
+      &.selected {
+        background: url("../images/woman_active.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    .male {
+      float: left;
+      background: url("../images/man_default.png") no-repeat center;
+      background-size: cover;
+      &.selected {
+        background: url("../images/man_active.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+
+  .choose-btn {
+    position: absolute;
+    left: 0;
+    bottom: px2rem(70);
+    height: px2rem(78);
+    width: 100%;
+    .choose-btn-inner {
+      width: px2rem(628);
+      height: 100%;
+      margin: 0 auto;
+
+      > div {
+        width: px2rem(289);
+        height: 100%;
+        &:active {
+          transform: scale(.95)
+        }
+      }
+
+      .btn-restart {
+        float: left;
+        background: url("../images/btn/try-choose-team.png") no-repeat center;
+        background-size: cover;
+
+      }
+
+      .btn-sure {
+        float: right;
+        background: url("../images/btn/ensure-clothes.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+}

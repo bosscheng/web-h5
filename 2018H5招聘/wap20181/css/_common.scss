@@ -1,0 +1,467 @@
+.header {
+  position: relative;
+}
+
+// 公共头部
+.common-header {
+  width: 100%;
+  height: px2rem(384);
+  position: relative;
+  background: url("../images/common-header.png") no-repeat center;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+.header-title {
+  position: absolute;
+  left: 50%;
+  top: px2rem(145);
+
+  // 角色选择
+  &.role-selects {
+    margin-left: px2rem(-276);
+    width: px2rem(554);
+    height: px2rem(132);
+    background: url("../images/header-role-select.png") no-repeat center;
+    background-size: contain;
+  }
+
+  // 角色信息
+  &.role-info {
+
+  }
+
+  &.role-size {
+    top: px2rem(100);
+    margin-left: px2rem(-248);
+    width: px2rem(496);
+    height: px2rem(118);
+  }
+  //
+  &.role-chanpingjl {
+    background: url("../images/header-role-chanpingjl.png") no-repeat center;
+    background-size: contain;
+  }
+
+  &.role-qianduan {
+    background: url("../images/header-role-qianduan.png") no-repeat center;
+    background-size: contain;
+  }
+
+  &.role-android {
+    background: url("../images/header-role-android.png") no-repeat center;
+    background-size: contain;
+  }
+
+  &.role-ios {
+    background: url("../images/header-role-ios.png") no-repeat center;
+    background-size: contain;
+  }
+
+  &.role-chanpingzj {
+    background: url("../images/header-role-chanpingzj.png") no-repeat center;
+    background-size: contain;
+  }
+
+  &.role-shuju {
+    background: url("../images/header-role-shuju.png") no-repeat center;
+    background-size: contain;
+  }
+
+  &.role-test {
+    background: url("../images/header-role-test.png") no-repeat center;
+    background-size: contain;
+  }
+
+  &.role-java {
+    background: url("../images/header-role-java.png") no-repeat center;
+    background-size: contain;
+  }
+
+  &.role-jiaohu {
+    background: url("../images/header-role-jiaohu.png") no-repeat center;
+    background-size: contain;
+  }
+
+  &.role-shijue {
+    background: url("../images/header-role-shijue.png") no-repeat center;
+    background-size: contain;
+  }
+
+  &.role-jiagou{
+    background: url("../images/header-role-jiagou.png") no-repeat center;
+    background-size: contain;
+  }
+  &.role-jszj{
+    background: url("../images/header-role-jszj.png") no-repeat center;
+    background-size: contain;
+  }
+
+
+}
+
+// icon
+.icon-chanpingjl {
+  background: url("../images/icon-cpjl.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-qianduan {
+  background: url("../images/icon-qd.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-android {
+  background: url("../images/icon-andriod.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-ios {
+  background: url("../images/icon-ios.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-chanpingzj {
+  background: url("../images/icon-cpzj.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-shuju {
+  background: url("../images/icon-shuju.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-test {
+  background: url("../images/icon-test.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-java {
+  background: url("../images/icon-java.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-jiaohu {
+  background: url("../images/icon-jhsj.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-shijue {
+  background: url("../images/icon-shijue.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-jiagou {
+  background: url("../images/icon-jiagou.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-jszj {
+  background: url("../images/icon-jszj.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-select-role {
+  background: url("../images/icon-select-role.png") no-repeat center;
+  background-size: contain;
+}
+
+// text
+.text-chanpingjl {
+  background: url("../images/text-cpjl.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-qianduan {
+  background: url("../images/text-qd.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-android {
+  background: url("../images/text-andriod.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-ios {
+  background: url("../images/text-ios.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-chanpingzj {
+  background: url("../images/text-cpzj.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-shuju {
+  background: url("../images/text-shuju.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-test {
+  background: url("../images/text-test.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-java {
+  background: url("../images/text-java.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-jiaohu {
+  background: url("../images/text-jhsj.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-shijue {
+  background: url("../images/text-shijue.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-jiagou {
+  background: url("../images/text-jiagou.png") no-repeat center;
+  background-size: contain;
+}
+
+.text-jszj {
+  background: url("../images/text-jszj.png") no-repeat center;
+  background-size: contain;
+}
+
+
+// icon-big
+
+.icon-chanpingjl-big {
+  background: url("../images/icon-cpjl-big.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-qianduan-big {
+  background: url("../images/icon-qd-big.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-android-big {
+  background: url("../images/icon-andriod-big.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-ios-big {
+  background: url("../images/icon-ios-big.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-chanpingzj-big {
+  background: url("../images/icon-cpzj-big.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-shuju-big {
+  background: url("../images/icon-shuju-big.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-test-big {
+  background: url("../images/icon-test-big.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-java-big {
+  background: url("../images/icon-java-big.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-jiaohu-big {
+  background: url("../images/icon-jhsj-big.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-shijue-big {
+  background: url("../images/icon-shijue-big.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-jiagou-big {
+  background: url("../images/icon-jiagou-big.png") no-repeat center;
+  background-size: contain;
+}
+
+.icon-jszj-big {
+  background: url("../images/icon-jszj-big.png") no-repeat center;
+  background-size: contain;
+}
+
+// info
+
+.info-chanpingjl {
+  background: url("../images/info-cpjl.png") no-repeat center;
+  background-size: contain;
+}
+
+.info-qianduan {
+  background: url("../images/info-qd.png") no-repeat center;
+  background-size: contain;
+}
+
+.info-android {
+  background: url("../images/info-andriod.png") no-repeat center;
+  background-size: contain;
+}
+
+.info-ios {
+  background: url("../images/info-ios.png") no-repeat center;
+  background-size: contain;
+}
+
+.info-chanpingzj {
+  background: url("../images/info-cpzj.png") no-repeat center;
+  background-size: contain;
+}
+
+.info-shuju {
+  background: url("../images/info-shuju.png") no-repeat center;
+  background-size: contain;
+}
+
+.info-test {
+  background: url("../images/info-test.png") no-repeat center;
+  background-size: contain;
+}
+
+.info-java {
+  background: url("../images/info-java.png") no-repeat center;
+  background-size: contain;
+}
+
+.info-jiaohu {
+  background: url("../images/info-jhsj.png") no-repeat center;
+  background-size: contain;
+}
+
+//
+.info-shijue {
+  background: url("../images/info-shijue.png") no-repeat center;
+  background-size: contain;
+}
+
+//
+.info-jiagou {
+  background: url("../images/info-jiagou.png") no-repeat center;
+  background-size: contain;
+}
+
+.info-jszj{
+  background: url("../images/info-jszj.png") no-repeat center;
+  background-size: contain;
+}
+
+//
+.tip-role-ability {
+  background: url("../images/role-ability-tip1.png") no-repeat center;
+  background-size: contain;
+}
+
+//
+.tip-role-need {
+  background: url("../images/role-ability-tip2.png") no-repeat center;
+  background-size: contain;
+}
+
+.btn-submit {
+  background: url("../images/role-ability-tip3.png") no-repeat center;
+  background-size: contain;
+}
+
+.btn-share {
+  background: url("../images/btn-share.png") no-repeat center;
+  background-size: contain;
+}
+
+.btn-submit2 {
+  background: url("../images/btn-submit.png") no-repeat center;
+  background-size: contain;
+}
+
+.btn-submiting {
+  background: url("../images/btn-submiting.png") no-repeat center;
+  background-size: contain;
+}
+
+//
+.btn-ikonw {
+  background: url("../images/btn-i-know.png") no-repeat center;
+  background-size: contain;
+}
+
+.btn-home {
+  background: url("../images/btn-home.png") no-repeat center;
+  background-size: contain;
+}
+
+.btn-back {
+  background: url("../images/btn-back.png") no-repeat center;
+  background-size: contain;
+}
+
+.btn-close {
+  background: url("../images/btn-close2.png") no-repeat center;
+  background-size: contain;
+}
+
+.btn-ability{
+  background: url("../images/btn-ability.png") no-repeat center;
+  background-size: contain;
+}
+
+.btn-music-open{
+  background: url("../images/music-open.png") no-repeat center;
+  background-size: contain;
+}
+
+.btn-music-close{
+  background: url("../images/music-close.png") no-repeat center;
+  background-size: contain;
+}
+
+.hide {
+  display: none;
+}
+
+.do-back {
+  position: absolute;
+  display: none;
+  top: px2rem(55);
+  left: px2rem(46);
+  width: px2rem(106);
+  height: px2rem(106);
+  z-index: 100;
+}
+
+.do-close {
+  position: absolute;
+  display: none;
+  top: px2rem(-42);
+  right: px2rem(20);
+  width: px2rem(94);
+  height: px2rem(94);
+  z-index: 100;
+}
+
+.do-share {
+  position: absolute;
+  display: none;
+  top: px2rem(55);
+  right: px2rem(20);
+  width: px2rem(106);
+  height: px2rem(106);
+  z-index: 100;
+}
+
+.do-music{
+  position: absolute;
+  display: none;
+  top: px2rem(25);
+  right: px2rem(15);
+  width: px2rem(114);
+  height: px2rem(47);
+  z-index: 100;
+}

@@ -1,0 +1,1098 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  line-height: 1.6;
+  position: relative; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+* {
+  -webkit-tap-highlight-color: transparent; }
+
+a img {
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+html {
+  font-size: 50px; }
+
+body {
+  font-size: 24px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33px; }
+
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px; }
+
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px; }
+
+  body {
+    font-size: 12px; } }
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px; }
+
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.67px; }
+
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px; }
+
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.27px; }
+
+  body {
+    font-size: 14px; } }
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px; }
+
+  body {
+    font-size: 15.36px; } }
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px; }
+
+  body {
+    font-size: 17.28px; } }
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px; }
+
+  body {
+    font-size: 23.04px; } }
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px; }
+
+  body {
+    font-size: 24px; } }
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+@keyframes bounce {
+  0%, 5% {
+    visibility: visible;
+    top: 2rem; }
+  50% {
+    top: 2.4rem; }
+  95% {
+    top: 2rem; }
+  100% {
+    top: 2rem; } }
+@keyframes bounce2 {
+  0%, 5% {
+    visibility: visible;
+    top: 2.5rem; }
+  50% {
+    top: 2.9rem; }
+  95% {
+    top: 2.5rem; }
+  100% {
+    top: 2.5rem; } }
+@keyframes blast {
+  0%, 5% {
+    transform: scale(0);
+    display: block; }
+  50% {
+    transform: scale(0.5); }
+  95% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1);
+    display: none; } }
+@keyframes shake {
+  0%, 5% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.95); }
+  95% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1); } }
+.header {
+  position: relative; }
+
+.common-header {
+  width: 100%;
+  height: 7.68rem;
+  position: relative;
+  background: url("../images/common-header.png") no-repeat center;
+  background-size: 100% 100%;
+  z-index: 1; }
+
+.header-title {
+  position: absolute;
+  left: 50%;
+  top: 2.9rem; }
+  .header-title.role-selects {
+    margin-left: -5.52rem;
+    width: 11.08rem;
+    height: 2.64rem;
+    background: url("../images/header-role-select.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-size {
+    top: 2rem;
+    margin-left: -4.96rem;
+    width: 9.92rem;
+    height: 2.36rem; }
+  .header-title.role-chanpingjl {
+    background: url("../images/header-role-chanpingjl.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-qianduan {
+    background: url("../images/header-role-qianduan.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-android {
+    background: url("../images/header-role-android.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-ios {
+    background: url("../images/header-role-ios.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-chanpingzj {
+    background: url("../images/header-role-chanpingzj.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-shuju {
+    background: url("../images/header-role-shuju.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-test {
+    background: url("../images/header-role-test.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-java {
+    background: url("../images/header-role-java.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-jiaohu {
+    background: url("../images/header-role-jiaohu.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-shijue {
+    background: url("../images/header-role-shijue.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-jiagou {
+    background: url("../images/header-role-jiagou.png") no-repeat center;
+    background-size: contain; }
+  .header-title.role-jszj {
+    background: url("../images/header-role-jszj.png") no-repeat center;
+    background-size: contain; }
+
+.icon-chanpingjl {
+  background: url("../images/icon-cpjl.png") no-repeat center;
+  background-size: contain; }
+
+.icon-qianduan {
+  background: url("../images/icon-qd.png") no-repeat center;
+  background-size: contain; }
+
+.icon-android {
+  background: url("../images/icon-andriod.png") no-repeat center;
+  background-size: contain; }
+
+.icon-ios {
+  background: url("../images/icon-ios.png") no-repeat center;
+  background-size: contain; }
+
+.icon-chanpingzj {
+  background: url("../images/icon-cpzj.png") no-repeat center;
+  background-size: contain; }
+
+.icon-shuju {
+  background: url("../images/icon-shuju.png") no-repeat center;
+  background-size: contain; }
+
+.icon-test {
+  background: url("../images/icon-test.png") no-repeat center;
+  background-size: contain; }
+
+.icon-java {
+  background: url("../images/icon-java.png") no-repeat center;
+  background-size: contain; }
+
+.icon-jiaohu {
+  background: url("../images/icon-jhsj.png") no-repeat center;
+  background-size: contain; }
+
+.icon-shijue {
+  background: url("../images/icon-shijue.png") no-repeat center;
+  background-size: contain; }
+
+.icon-jiagou {
+  background: url("../images/icon-jiagou.png") no-repeat center;
+  background-size: contain; }
+
+.icon-jszj {
+  background: url("../images/icon-jszj.png") no-repeat center;
+  background-size: contain; }
+
+.icon-select-role {
+  background: url("../images/icon-select-role.png") no-repeat center;
+  background-size: contain; }
+
+.text-chanpingjl {
+  background: url("../images/text-cpjl.png") no-repeat center;
+  background-size: contain; }
+
+.text-qianduan {
+  background: url("../images/text-qd.png") no-repeat center;
+  background-size: contain; }
+
+.text-android {
+  background: url("../images/text-andriod.png") no-repeat center;
+  background-size: contain; }
+
+.text-ios {
+  background: url("../images/text-ios.png") no-repeat center;
+  background-size: contain; }
+
+.text-chanpingzj {
+  background: url("../images/text-cpzj.png") no-repeat center;
+  background-size: contain; }
+
+.text-shuju {
+  background: url("../images/text-shuju.png") no-repeat center;
+  background-size: contain; }
+
+.text-test {
+  background: url("../images/text-test.png") no-repeat center;
+  background-size: contain; }
+
+.text-java {
+  background: url("../images/text-java.png") no-repeat center;
+  background-size: contain; }
+
+.text-jiaohu {
+  background: url("../images/text-jhsj.png") no-repeat center;
+  background-size: contain; }
+
+.text-shijue {
+  background: url("../images/text-shijue.png") no-repeat center;
+  background-size: contain; }
+
+.text-jiagou {
+  background: url("../images/text-jiagou.png") no-repeat center;
+  background-size: contain; }
+
+.text-jszj {
+  background: url("../images/text-jszj.png") no-repeat center;
+  background-size: contain; }
+
+.icon-chanpingjl-big {
+  background: url("../images/icon-cpjl-big.png") no-repeat center;
+  background-size: contain; }
+
+.icon-qianduan-big {
+  background: url("../images/icon-qd-big.png") no-repeat center;
+  background-size: contain; }
+
+.icon-android-big {
+  background: url("../images/icon-andriod-big.png") no-repeat center;
+  background-size: contain; }
+
+.icon-ios-big {
+  background: url("../images/icon-ios-big.png") no-repeat center;
+  background-size: contain; }
+
+.icon-chanpingzj-big {
+  background: url("../images/icon-cpzj-big.png") no-repeat center;
+  background-size: contain; }
+
+.icon-shuju-big {
+  background: url("../images/icon-shuju-big.png") no-repeat center;
+  background-size: contain; }
+
+.icon-test-big {
+  background: url("../images/icon-test-big.png") no-repeat center;
+  background-size: contain; }
+
+.icon-java-big {
+  background: url("../images/icon-java-big.png") no-repeat center;
+  background-size: contain; }
+
+.icon-jiaohu-big {
+  background: url("../images/icon-jhsj-big.png") no-repeat center;
+  background-size: contain; }
+
+.icon-shijue-big {
+  background: url("../images/icon-shijue-big.png") no-repeat center;
+  background-size: contain; }
+
+.icon-jiagou-big {
+  background: url("../images/icon-jiagou-big.png") no-repeat center;
+  background-size: contain; }
+
+.icon-jszj-big {
+  background: url("../images/icon-jszj-big.png") no-repeat center;
+  background-size: contain; }
+
+.info-chanpingjl {
+  background: url("../images/info-cpjl.png") no-repeat center;
+  background-size: contain; }
+
+.info-qianduan {
+  background: url("../images/info-qd.png") no-repeat center;
+  background-size: contain; }
+
+.info-android {
+  background: url("../images/info-andriod.png") no-repeat center;
+  background-size: contain; }
+
+.info-ios {
+  background: url("../images/info-ios.png") no-repeat center;
+  background-size: contain; }
+
+.info-chanpingzj {
+  background: url("../images/info-cpzj.png") no-repeat center;
+  background-size: contain; }
+
+.info-shuju {
+  background: url("../images/info-shuju.png") no-repeat center;
+  background-size: contain; }
+
+.info-test {
+  background: url("../images/info-test.png") no-repeat center;
+  background-size: contain; }
+
+.info-java {
+  background: url("../images/info-java.png") no-repeat center;
+  background-size: contain; }
+
+.info-jiaohu {
+  background: url("../images/info-jhsj.png") no-repeat center;
+  background-size: contain; }
+
+.info-shijue {
+  background: url("../images/info-shijue.png") no-repeat center;
+  background-size: contain; }
+
+.info-jiagou {
+  background: url("../images/info-jiagou.png") no-repeat center;
+  background-size: contain; }
+
+.info-jszj {
+  background: url("../images/info-jszj.png") no-repeat center;
+  background-size: contain; }
+
+.tip-role-ability {
+  background: url("../images/role-ability-tip1.png") no-repeat center;
+  background-size: contain; }
+
+.tip-role-need {
+  background: url("../images/role-ability-tip2.png") no-repeat center;
+  background-size: contain; }
+
+.btn-submit {
+  background: url("../images/role-ability-tip3.png") no-repeat center;
+  background-size: contain; }
+
+.btn-share {
+  background: url("../images/btn-share.png") no-repeat center;
+  background-size: contain; }
+
+.btn-submit2 {
+  background: url("../images/btn-submit.png") no-repeat center;
+  background-size: contain; }
+
+.btn-submiting {
+  background: url("../images/btn-submiting.png") no-repeat center;
+  background-size: contain; }
+
+.btn-ikonw {
+  background: url("../images/btn-i-know.png") no-repeat center;
+  background-size: contain; }
+
+.btn-home {
+  background: url("../images/btn-home.png") no-repeat center;
+  background-size: contain; }
+
+.btn-back {
+  background: url("../images/btn-back.png") no-repeat center;
+  background-size: contain; }
+
+.btn-close {
+  background: url("../images/btn-close2.png") no-repeat center;
+  background-size: contain; }
+
+.btn-ability {
+  background: url("../images/btn-ability.png") no-repeat center;
+  background-size: contain; }
+
+.btn-music-open {
+  background: url("../images/music-open.png") no-repeat center;
+  background-size: contain; }
+
+.btn-music-close {
+  background: url("../images/music-close.png") no-repeat center;
+  background-size: contain; }
+
+.hide {
+  display: none; }
+
+.do-back {
+  position: absolute;
+  display: none;
+  top: 1.1rem;
+  left: 0.92rem;
+  width: 2.12rem;
+  height: 2.12rem;
+  z-index: 100; }
+
+.do-close {
+  position: absolute;
+  display: none;
+  top: -0.84rem;
+  right: 0.4rem;
+  width: 1.88rem;
+  height: 1.88rem;
+  z-index: 100; }
+
+.do-share {
+  position: absolute;
+  display: none;
+  top: 1.1rem;
+  right: 0.4rem;
+  width: 2.12rem;
+  height: 2.12rem;
+  z-index: 100; }
+
+.do-music {
+  position: absolute;
+  display: none;
+  top: 0.5rem;
+  right: 0.3rem;
+  width: 2.28rem;
+  height: 0.94rem;
+  z-index: 100; }
+
+.loading-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: relative; }
+  .loading-wrap .content {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-left: -4.5rem; }
+  .loading-wrap .progress {
+    width: 9rem;
+    height: 1.2rem;
+    background: #d02034;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: 0.6rem; }
+  .loading-wrap .progress > span {
+    position: relative;
+    float: left;
+    margin: 0 -1px;
+    height: 1.12rem;
+    line-height: 1.12rem;
+    text-align: right;
+    background: #fdda38;
+    border: 0.04rem solid;
+    border-color: #fdda38 #fdda38 #fdda38;
+    border-radius: 0.6rem;
+    background-image: -webkit-linear-gradient(top, #fdda38 0%, #fdda38 70%, #fdda38 100%);
+    background-image: -moz-linear-gradient(top, #fdda38 0%, #fdda38 70%, #fdda38 100%);
+    background-image: -o-linear-gradient(top, #fdda38 0%, #fdda38 70%, #fdda38 100%);
+    background-image: linear-gradient(to bottom, #fdda38 0%, #fdda38 70%, #fdda38 100%);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2); }
+  .loading-wrap .progress > span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 18px;
+    background: url(../images/progress.png) 0 0 repeat-x;
+    border-radius: 10px; }
+  .loading-wrap .progress-tips {
+    margin: 0 auto;
+    width: 2.84rem;
+    height: 0.52rem;
+    background: url("../images/loading-tips.png") no-repeat center;
+    background-size: contain;
+    margin-top: 0.8rem; }
+
+.main {
+  background: url("../images/main-bg.png") no-repeat center;
+  background-size: 100% 100%; }
+  .main > div {
+    position: relative; }
+  .main .main-top {
+    width: 100%;
+    height: 6.96rem;
+    background: url("../images/main-top.png") no-repeat center;
+    background-size: 100% 100%;
+    padding-top: 0.2rem;
+    z-index: 1;
+    transform: scale(4);
+    transition: transform 0.2s ease-in; }
+    .main .main-top.show-normal {
+      transform: scale(1); }
+  .main .main-title {
+    width: 100%;
+    height: 4.36rem;
+    background: url("../images/main-title.png") no-repeat center;
+    background-size: 100% 100%;
+    margin-top: -1.7rem; }
+    .main .main-title > div {
+      width: 9.36rem;
+      height: 2.72rem;
+      margin: 0 auto;
+      background: url("../images/main-title-inner.png") no-repeat center;
+      background-size: contain;
+      padding-top: 2.4rem; }
+  .main .main-people {
+    width: 12.9rem;
+    height: 12.7rem;
+    margin: 0 auto;
+    background: url("../images/main-people.png") no-repeat center;
+    background-size: 100% 100%; }
+  .main .fireworks {
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/fireworks.png") no-repeat center;
+    background-size: contain; }
+  .main .fireworks1 {
+    position: absolute;
+    left: 2.1rem;
+    top: 7.4rem;
+    transform: scale(0);
+    animation: blast 1.5s linear infinite; }
+  .main .fireworks2 {
+    position: absolute;
+    left: 3rem;
+    top: 8.6rem;
+    transform: scale(0);
+    animation: blast 1.5s linear 1s infinite; }
+  .main .fireworks3 {
+    position: absolute;
+    right: 2.5rem;
+    top: 7.5rem;
+    transform: scale(0);
+    animation: blast 1.5s linear 0.5s infinite; }
+  .main .main-footer {
+    width: 100%;
+    height: 7rem;
+    background: url("../images/main-footer.png") no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 1rem; }
+    .main .main-footer > div {
+      width: 14.4rem;
+      height: 2.32rem;
+      background: url("../images/main-button.png") no-repeat center;
+      background-size: contain;
+      margin: 0 auto;
+      margin-top: 4.5rem;
+      animation: shake 0.8s linear infinite; }
+      .main .main-footer > div:active {
+        transform: scale(0.95); }
+
+.role-select {
+  background: url("../images/main-bg.png") no-repeat center;
+  background-size: 100% 100%; }
+  .role-select .role-size {
+    top: 2.6rem;
+    margin-left: -5.54rem;
+    width: 11.08rem;
+    height: 2.64rem; }
+  .role-select .content .role-list {
+    margin: 0 auto;
+    padding-top: 5rem;
+    width: 13.7rem;
+    height: 9rem;
+    position: relative; }
+  .role-select .content .role-list1 {
+    width: 100%;
+    position: absolute;
+    top: -1.4rem;
+    z-index: 1; }
+  .role-select .content .role-list2 {
+    width: 100%;
+    position: absolute;
+    top: 3.6rem; }
+  .role-select .content .role-list3 {
+    width: 100%;
+    position: absolute;
+    top: 9rem; }
+  .role-select .content .icon {
+    width: 24.9%;
+    min-width: 3.04rem;
+    height: 3.04rem;
+    display: inline-block;
+    text-align: center; }
+    .role-select .content .icon.selected i {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      background: url("../images/icon-selected-border.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-chanpingjl {
+      background: url("../images/text-cpjl-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-qianduan {
+      background: url("../images/text-qd-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-android {
+      background: url("../images/text-andriod-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-ios {
+      background: url("../images/text-ios-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-chanpingzj {
+      background: url("../images/text-cpzj-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-shuju {
+      background: url("../images/text-shuju-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-test {
+      background: url("../images/text-test-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-java {
+      background: url("../images/text-java-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-jiaohu {
+      background: url("../images/text-jhsj-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-shijue {
+      background: url("../images/text-shijue-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-jiagou {
+      background: url("../images/text-jiagou-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon.selected .text-jszj {
+      background: url("../images/text-jszj-selected.png") no-repeat center;
+      background-size: contain; }
+    .role-select .content .icon:last-child {
+      margin-right: -0.4rem; }
+    .role-select .content .icon .inner-icon {
+      display: inline-block;
+      width: 3.04rem;
+      height: 3.04rem; }
+    .role-select .content .icon .text {
+      display: inline-block;
+      height: 0.64rem;
+      width: 100%; }
+  .role-select .select-footer .sure-btn {
+    width: 6.92rem;
+    height: 2rem;
+    margin: 0 auto;
+    background: url("../images/sure-select.png") no-repeat center;
+    background-size: contain;
+    animation: shake 0.8s linear infinite; }
+
+.role-information {
+  background: url("../images/main-bg.png") no-repeat center;
+  background-size: 100% 100%; }
+  .role-information .info-tips {
+    position: absolute;
+    left: 50%;
+    margin-left: -4.48rem;
+    top: 5rem;
+    width: 8.96rem;
+    height: 2.28rem; }
+  .role-information .role-info-inner {
+    width: 100%;
+    height: 100%; }
+  .role-information .content {
+    width: 100%;
+    height: 16rem;
+    position: absolute;
+    left: 0;
+    bottom: 1rem; }
+    .role-information .content > .icon-big {
+      width: 100%;
+      position: relative;
+      left: 150%;
+      transform: translatex(-50%);
+      transition: left .5s ease-in; }
+      .role-information .content > .icon-big.do-show {
+        left: 50%; }
+    .role-information .content .house-bg {
+      position: absolute;
+      bottom: 0;
+      height: 7.36rem;
+      width: 100%;
+      background: url("../images/house-bg.png") no-repeat center;
+      background-size: 100% 100%;
+      transform: scale(0);
+      transition: transform 0.5s ease-in; }
+      .role-information .content .house-bg.normal-show {
+        transform: scale(1); }
+    .role-information .content .icon-bg {
+      transform: scale(0);
+      transition: transform 0.5s ease-in; }
+      .role-information .content .icon-bg.normal-show {
+        transform: scale(1); }
+    .role-information .content .icon-chanpingjl-big {
+      width: 7.96rem;
+      height: 13.46rem; }
+    .role-information .content .icon-android-big {
+      width: 7.34rem;
+      height: 13.76rem; }
+    .role-information .content .icon-ios-big {
+      width: 7.96rem;
+      height: 14.06rem; }
+    .role-information .content .icon-shuju-big {
+      width: 7.02rem;
+      height: 13.76rem; }
+    .role-information .content .icon-java-big {
+      width: 10.7rem;
+      height: 13.38rem; }
+    .role-information .content .icon-test-big {
+      width: 5.22rem;
+      height: 13.58rem; }
+    .role-information .content .icon-jiaohu-big {
+      width: 6.62rem;
+      height: 13.78rem; }
+    .role-information .content .icon-shijue-big {
+      width: 7.18rem;
+      height: 13.82rem; }
+    .role-information .content .icon-jiagou-big {
+      width: 7.18rem;
+      height: 13.64rem; }
+    .role-information .content .icon-jszj-big {
+      width: 5.86rem;
+      height: 13.7rem; }
+    .role-information .content .icon-qianduan-big {
+      width: 9.32rem;
+      height: 14rem; }
+    .role-information .content .icon-chanpingzj-big {
+      width: 10.42rem;
+      height: 13.72rem; }
+    .role-information .content .icon-chanpingjl-big-bg {
+      width: 9.76rem;
+      height: 9.12rem;
+      position: absolute;
+      left: 2.3rem;
+      top: 2.9rem;
+      background: url("../images/icon-chanpingjl-big-bg.png") no-repeat center;
+      background-size: contain; }
+    .role-information .content .icon-qianduan-big-bg {
+      width: 12.18rem;
+      height: 12.32rem;
+      position: absolute;
+      left: 1.5rem;
+      top: 0;
+      background: url("../images/icon-qianduan-big-bg.png") no-repeat center;
+      background-size: contain; }
+    .role-information .content .icon-android-big-bg {
+      width: 11.52rem;
+      height: 11.52rem;
+      position: absolute;
+      left: 2.5rem;
+      top: 1.5rem;
+      background: url("../images/icon-android-big-bg.png") no-repeat center;
+      background-size: contain; }
+    .role-information .content .icon-ios-big-bg {
+      width: 15rem;
+      height: 10.34rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url("../images/icon-ios-big-bg.png") no-repeat center;
+      background-size: contain; }
+    .role-information .content .icon-shuju-big-bg {
+      width: 14.24rem;
+      height: 8.72rem;
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      background: url("../images/icon-shuju-big-bg.png") no-repeat center;
+      background-size: contain; }
+    .role-information .content .icon-java-big-bg {
+      width: 100%;
+      height: 9.3rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url("../images/icon-java-big-bg.png") no-repeat center;
+      background-size: 100% 100%; }
+    .role-information .content .icon-test-big-bg {
+      width: 100%;
+      height: 10.34rem;
+      position: absolute;
+      left: 0;
+      top: 2.2rem;
+      background: url("../images/icon-test-big-bg.png") no-repeat center;
+      background-size: 100% 100%; }
+    .role-information .content .icon-jiaohu-big-bg {
+      width: 14.2rem;
+      height: 9.84rem;
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      background: url("../images/icon-jiaohu-big-bg.png") no-repeat center;
+      background-size: contain; }
+    .role-information .content .icon-shijue-big-bg {
+      width: 14.2rem;
+      height: 9.84rem;
+      position: absolute;
+      left: 0.5rem;
+      top: 1rem;
+      background: url("../images/icon-shijue-big-bg.png") no-repeat center;
+      background-size: contain; }
+    .role-information .content .icon-jiagou-big-bg {
+      width: 14.2rem;
+      height: 9.84rem;
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      background: url("../images/icon-jiagou-big-bg.png") no-repeat center;
+      background-size: contain; }
+    .role-information .content .icon-jszj-big-bg {
+      width: 14.2rem;
+      height: 9.84rem;
+      position: absolute;
+      left: 0.3rem;
+      top: 1.5rem;
+      background: url("../images/icon-jszj-big-bg.png") no-repeat center;
+      background-size: contain; }
+    .role-information .content .icon-chanpingzj-big-bg {
+      width: 14.2rem;
+      height: 9.84rem;
+      position: absolute;
+      left: 0.5rem;
+      top: 0.5rem;
+      background: url("../images/icon-chanpingzj-big-bg.png") no-repeat center;
+      background-size: contain; }
+    .role-information .content .icon-qianduan-book {
+      position: absolute;
+      width: 2.2rem;
+      height: 4.48rem;
+      top: 2rem;
+      right: 0.7rem;
+      background: url("../images/icon-qianduan-2.png") no-repeat center;
+      background-size: contain;
+      animation: bounce 1.5s linear 0.6s infinite;
+      visibility: hidden; }
+    .role-information .content .icon-android-balloon {
+      position: absolute;
+      width: 4.28rem;
+      height: 4.28rem;
+      top: 2.5rem;
+      right: 2.7rem;
+      background: url("../images/icon-andriod-2.png") no-repeat center;
+      background-size: contain;
+      animation: bounce2 1.5s linear 0.6s infinite;
+      visibility: hidden; }
+  .role-information .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0; }
+    .role-information .footer .sure-btn {
+      width: 6.92rem;
+      height: 2.04rem;
+      background: url("../images/btn-ability.png") no-repeat center;
+      background-size: contain;
+      margin: 0 auto;
+      margin-bottom: 0.6rem; }
+  .role-information .role-ability {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 110%;
+    left: 0;
+    transition: top .5s ease-in;
+    display: none; }
+    .role-information .role-ability.aniShow {
+      top: 3rem; }
+
+.role-ability .content {
+  width: 13.8rem;
+  height: 22rem;
+  background: url("../images/role-ability-content-bg.png") no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2; }
+  .role-ability .content .group {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 0.8rem; }
+    .role-ability .content .group:first-child {
+      padding-top: 2.4rem; }
+    .role-ability .content .group .group-content {
+      width: 100%;
+      height: 7rem;
+      overflow-y: auto; }
+    .role-ability .content .group p {
+      font-size: 0.56rem;
+      font-family: "Microsoft Yahei"; }
+  .role-ability .content .tips {
+    width: 4.9rem;
+    height: 1.44rem; }
+.role-ability .sure-btn-inner {
+  width: 5.84rem;
+  height: 1.78rem;
+  background: url("../images/role-ability-tip3.png") no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
+  margin-top: 0.5rem; }
+
+.success-page {
+  background: url("../images/main-bg.png") no-repeat center;
+  background-size: 100% 100%; }
+  .success-page .content {
+    width: 10.74rem;
+    height: 10.98rem;
+    margin: 0 auto;
+    background: url("../images/success-tips.png") no-repeat center;
+    background-size: contain;
+    padding-top: 3.64rem; }
+  .success-page .footer .btn {
+    margin: 0 auto;
+    width: 3.68rem;
+    height: 3.68rem; }
+  .success-page .footer .btn-home {
+    margin-top: 0.6rem; }
+
+.form-page {
+  background: url("../images/main-bg.png") no-repeat center;
+  background-size: 100% 100%; }
+  .form-page .role-size {
+    top: 3rem;
+    margin-left: -5.54rem;
+    width: 11.08rem;
+    height: 2.64rem; }
+  .form-page .content {
+    width: 11.56rem;
+    margin: 0 auto;
+    margin-top: -1rem; }
+    .form-page .content .group {
+      margin-top: 0.6rem; }
+      .form-page .content .group:first-child {
+        margin-top: 0; }
+    .form-page .content .group-input {
+      height: 1.64rem;
+      width: 100%;
+      margin-top: 0.36rem; }
+      .form-page .content .group-input input, .form-page .content .group-input select {
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        font-size: 1rem;
+        border: none; }
+      .form-page .content .group-input input {
+        padding-left: 0.32rem; }
+    .form-page .content .tips {
+      height: 1.04rem;
+      width: 100%; }
+    .form-page .content .tip1 {
+      background: url("../images/tip-name.png") no-repeat left;
+      background-size: contain; }
+    .form-page .content .tip2 {
+      background: url("../images/tip-tele.png") no-repeat left;
+      background-size: contain; }
+    .form-page .content .tip3 {
+      background: url("../images/tip-work.png") no-repeat left;
+      background-size: contain; }
+    .form-page .content .tip4 {
+      background: url("../images/tip-work-age.png") no-repeat left;
+      background-size: contain; }
+  .form-page .footer .btn {
+    width: 6.92rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-top: 0.8rem; }
+
+.share-page {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .share-page .content {
+    width: 11.06rem;
+    height: 20.6rem;
+    margin-top: 0.8rem;
+    margin-left: 2.6rem;
+    background: url("../images/bg-share.png") no-repeat center;
+    background-size: contain; }
+  .share-page .footer .btn {
+    width: 4.48rem;
+    height: 1.6rem;
+    margin: 0 auto;
+    margin-top: 0.8rem; }
+
+.error-page {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .error-page .content {
+    position: relative;
+    width: 9.72rem;
+    height: 6rem;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 0.06rem;
+    margin: 0 auto;
+    margin-top: 50%; }
+    .error-page .content .tip1 {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #cf1a3d;
+      margin-top: 0.96rem;
+      margin-bottom: 0.4rem; }
+    .error-page .content .tip2 {
+      text-align: center;
+      font-size: 0.52rem;
+      color: #2d2d2d; }
+    .error-page .content .btn {
+      position: absolute;
+      bottom: 0;
+      left: 0.2rem;
+      width: 9.36rem;
+      height: 1.64rem;
+      line-height: 1.64rem;
+      border-top: 1px solid #eaeaea;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #cf1a3d; }
+      .error-page .content .btn:active {
+        color: #BE1B3E; }
+
+/*# sourceMappingURL=index.css.map */

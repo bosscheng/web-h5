@@ -1,0 +1,74 @@
+// loading 页面
+.page-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg-loading2.jpg") no-repeat center;
+  background-size: cover;
+  background-position: left 0 bottom 0;
+
+  .load-icon {
+    width: px2rem(79);
+    height: px2rem(134);
+    margin: 0 auto;
+    margin-top: px2rem(132);
+    background: url("../images/gif.png") no-repeat center;
+    background-size: 100% 100%;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .load-icon-end {
+    width: px2rem(164);
+    height: px2rem(134);
+    margin: 0 auto;
+    margin-top: px2rem(132);
+    background: url("../images/load_logo_end2.png") no-repeat center;
+    background-size: 100% 100%;
+  }
+
+  .load-title {
+    width: px2rem(207);
+    height: px2rem(45);
+    margin: 0 auto;
+    margin-top: px2rem(18);
+    background: url("../images/load_logo_font2.png") no-repeat center;
+    background-size: 100% 100%;
+  }
+
+  .load-loading {
+    width: px2rem(209);
+    height: px2rem(5);
+    margin: 0 auto;
+    margin-top: px2rem(30);
+    background: url("../images/loadline_default.png") no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+  }
+
+  .load-loading-percent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: px2rem(5);
+    width: 0;
+    background: url("../images/loadline_active.png") no-repeat center;
+    background-size: 100% 100%;
+  }
+
+  .load-loading-icon {
+    position: absolute;
+    left: -3%;
+    top: px2rem(-12);
+    width: px2rem(32);
+    height: px2rem(28);
+    background: url("../images/loadline_activeball2.png") no-repeat center;
+    background-size: 100% 100%;
+  }
+}

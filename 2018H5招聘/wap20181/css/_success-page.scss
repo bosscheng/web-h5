@@ -1,0 +1,25 @@
+.success-page {
+  background: url("../images/main-bg.png") no-repeat center;
+  background-size: 100% 100%;
+
+  .content {
+    width: px2rem(537);
+    height: px2rem(549);
+    margin: 0 auto;
+    background: url("../images/success-tips.png") no-repeat center;
+    background-size: contain;
+    padding-top: px2rem(182);
+  }
+
+  .footer {
+    .btn {
+      margin: 0 auto;
+      width: px2rem(184);
+      height: px2rem(184);
+    }
+
+    .btn-home{
+      margin-top: px2rem(30);
+    }
+  }
+}

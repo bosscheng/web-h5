@@ -1,0 +1,802 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+li{
+    list-style: none;
+}
+.tabBox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../image/background01.jpg)no-repeat center center;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+@-webkit-keyframes rotation{
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.2);
+    }
+}
+
+.radio1,.radio2,.radio5{
+    -webkit-animation-name: rotation;/*动画属性名，也就是我们前面keyframes定义的动画名*/
+    -webkit-animation-duration: 2s;/*动画持续时间*/
+    -webkit-animation-timing-function: ease; /*动画频率，和transition-timing-function是一样的*/
+    -webkit-animation-delay: 0s;/*动画延迟时间*/
+    -webkit-animation-iteration-count: infinite;/*定义循环资料，infinite为无限次*/
+    -webkit-animation-direction: alternate;/*定义动画方式*/
+}
+.radio{
+    position: absolute;
+}
+.radio1{
+    width: 17%;
+    padding-top: 17%;
+    left: 5%;
+    top: 2%;
+    background: url(../image/background6.png)no-repeat center center;
+    background-size: contain;
+}
+.radio2{
+    width: 53%;
+    padding-top: 53%;
+    left: 58%;
+    top: -3%;
+    background: url(../image/background1.png)no-repeat center center;
+    background-size: contain;
+}
+.radio3{
+    width: 21%;
+    padding-top: 19.5%;
+    left: 72.5%;
+    top: 4.5%;
+    background: url(../image/4.png)no-repeat center center;
+    background-size: contain;
+}
+.radio4{
+    width: 58%;
+    padding-top: 58%;
+    left: -24%;
+    bottom: -6%;
+    background: url(../image/background3.png)no-repeat center center;
+    background-size: contain;
+    -webkit-animation-name: rotation;/*动画属性名，也就是我们前面keyframes定义的动画名*/
+    -webkit-animation-duration: 3s;/*动画持续时间*/
+    -webkit-animation-timing-function: ease; /*动画频率，和transition-timing-function是一样的*/
+    -webkit-animation-delay: 0s;/*动画延迟时间*/
+    -webkit-animation-iteration-count: infinite;/*定义循环资料，infinite为无限次*/
+    -webkit-animation-direction: alternate;/*定义动画方式*/
+}
+.radio5{
+    width: 29%;
+    padding-top: 29%;
+    left: 67%;
+    bottom: 7%;
+    background: url(../image/background4.png)no-repeat center center;
+    background-size: contain;
+}
+.radio6{
+    width: 15%;
+    padding-top: 15%;
+    left: 92%;
+    bottom: 6%;
+    background: url(../image/background5.png)no-repeat center center;
+    background-size: contain;
+}
+.radio7{
+    width: 65%;
+    padding-top: 17%;
+    left: 10%;
+    top: 35%;
+    background: url(../image/wenzi1.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1.5s alternate ease-out;
+}
+.radio8{
+    width: 65%;
+    padding-top: 17%;
+    right: 10%;
+    top: 45%;
+    background: url(../image/wenzi2.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: rmoveIn 1.5s alternate ease-out;
+}
+.radio9{
+    width: 62%;
+    padding-top: 4%;
+    left: 10%;
+    top: 32.8%;
+    background: url(../image/wenzi3.png)no-repeat center center;
+    background-size: contain;
+    -webkit-animation: fadeIn 5s alternate ease-out;
+    animation: fadeIn 5s alternate ease-out;
+}
+.radio13{
+    width: 54%;
+    padding-top: 54%;
+    right: -15%;
+    top: 42.5%;
+    background: url(../image/background2.png)no-repeat center center;
+    background-size: contain;
+    -webkit-animation-name: rotation;/*动画属性名，也就是我们前面keyframes定义的动画名*/
+    -webkit-animation-duration: 3s;/*动画持续时间*/
+    -webkit-animation-timing-function: ease; /*动画频率，和transition-timing-function是一样的*/
+    -webkit-animation-delay: 0s;/*动画延迟时间*/
+    -webkit-animation-iteration-count: infinite;/*定义循环资料，infinite为无限次*/
+    -webkit-animation-direction: alternate;/*定义动画方式*/
+}
+.radio10{
+    width: 16%;
+    padding-top: 16%;
+    right: 5%;
+    top: 0;
+    background: url(../image/line3.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: star-ani 3s infinite ease-out;
+    z-index: 0;
+}
+.radio11{
+    width: 16%;
+    padding-top: 16%;
+    right: 0;
+    top: 45%;
+    background: url(../image/line3.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: star-ani 2s infinite ease-out;
+    z-index: 0;
+}
+.radio12{
+    width: 16%;
+    padding-top: 16%;
+    right: 0;
+    bottom: 13%;
+    background: url(../image/line3.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: star-ani 2s infinite ease-out;
+    z-index: 0;
+}
+@keyframes lmoveIn {
+    0% {
+        opacity: 0;
+        transform: scale(1) rotate(0) translate3d(-300px, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(-300px, 0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(-300px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0) translate3d(0, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(0, 0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(0, 0, 0);
+    }
+}
+@keyframes rmoveIn {
+    0% {
+        opacity: 0;
+        transform: scale(1) rotate(0) translate3d(300px, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(300px, 0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(300px, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0) translate3d(0, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(0, 0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(0, 0, 0);
+    }
+}
+@keyframes star-ani {
+    0% {
+        opacity: 1;
+        transform: scale(1) rotate(0) translate3d(0, 0, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(0, 0, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+        -webkit-transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+        -moz-transform: scale(1) rotate(0) translate3d(-300px, 300px, 0);
+    }
+}
+.address_info{
+    width: 53.3%;
+    height: 21.2%;
+    left: 10%;
+    bottom: 3.5%;
+    background: url(../image/time.png)no-repeat center center;
+    background-size: contain;
+}
+
+
+.tabBox2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../image/background-02.jpg)no-repeat center center;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.signUp_option{
+    position: absolute;
+}
+.signUp_online{
+    width: 57.3%;
+    height: 4.2%;
+    left: 6.3%;
+    top: 7%;
+    background: url(../image/icon-2.png)no-repeat center center;
+    background-size: contain;
+}
+.conference_detail{
+    width: 28.3%;
+    height: 4.2%;
+    left: 5.3%;
+    top: 7%;
+    background: url(../image/Group_1.png)no-repeat center center;
+    background-size: contain;
+}
+.conference_guest{
+    width: 28.3%;
+    height: 4.2%;
+    left: 5.3%;
+    top: 7%;
+    background: url(../image/Group_4.png)no-repeat center center;
+    background-size: contain;
+}
+.speech_guest{
+    width: 28.3%;
+    height: 4.2%;
+    left: 5.3%;
+    top: 7%;
+    background: url(../image/speechGust.png)no-repeat center center;
+    background-size: contain;
+}
+.communication_guest{
+    width: 28.3%;
+    height: 4.2%;
+    left: 5.3%;
+    top: 7%;
+    background: url(../image/communicateGuest.png)no-repeat center center;
+    background-size: contain;
+}
+.workshop_guest{
+    width: 48.3%;
+    height: 4.2%;
+    left: 6.3%;
+    top: 7%;
+    background: url(../image/workshop.png)no-repeat center center;
+    background-size: contain;
+}
+.renew{
+    width: 28.3%;
+    height: 4.2%;
+    left: 6.3%;
+    top: 7%;
+    background: url(../image/renew.png)no-repeat center center;
+    background-size: contain;
+}
+.main_organizers{
+    width: 34.3%;
+    height: 4.2%;
+    left: 6.3%;
+    top: 7%;
+    background: url(../image/mainOrganizers.png)no-repeat center center;
+    background-size: contain;
+}
+.minor_organizers{
+    width: 34.3%;
+    height: 4.2%;
+    left: 6.3%;
+    top: 7%;
+    background: url(../image/minorOrganizers.png)no-repeat center center;
+    background-size: contain;
+}
+.signUpItem{
+    width: 80%;
+    height: 41.8%;
+    top: 20.3%;
+    padding: 0 10%;
+    z-index: 2;
+}
+.signUpItem input{
+    width: 95%;
+    height: 16.24%;
+    margin-bottom: 5.2%;
+    padding-left: 5.3%;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, sans-serif;
+    background: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.8);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+input::-webkit-input-placeholder{
+    color: rgba(255,255,255,0.6);
+}
+.requireOption{
+    font-family: PingFangSC-Regular, sans-serif;
+    font-size: 11px;
+    color: #ffffff;
+}
+.requireOption span{
+    float: right;
+}
+.last_input{
+    margin-bottom: 3% !important;
+}
+.signUpBtn{
+    width: 100% !important;
+    padding-left: 0 !important;
+    margin-top: 5%;
+    margin-bottom: 3% !important;
+    font-size: 16px !important;
+    color: #ffffff !important;
+    background: #1F56EA !important;
+    cursor: pointer;
+}
+.signUp_area{
+    display: block;
+}
+.signUp_success{
+    display: none;
+    position: relative;
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 22.5%;
+}
+.success_icon{
+    width: 17.3%;
+    padding-top: 17.3%;
+    left: 43.3%;
+    background: url(../image/icon-1.png) no-repeat center;
+    background-size: contain;
+}
+.success_icon1{
+    width: 46%;
+    top: 15%;
+    padding-top: 11.3%;
+    left: 27.3%;
+    background: url(../image/success_alert.png) no-repeat center;
+    background-size: contain;
+}
+.text_area{
+    width: 100%;
+    height: 43%;
+    background: url(../image/signUpSuccess.png) no-repeat center;
+    background-size: contain;
+    top: 23%;
+    position: absolute;
+}
+.qr_code{
+    position: absolute;
+    width: 75%;
+    height: 36%;
+    top: 72%;
+    left: 12.5%;
+}
+.qr_code img{
+    width: 100%;
+    height: 100%;
+}
+.shrinkLabel{
+    width: 25%;
+    height: 5%;
+    bottom: 6%;
+    right: -1%;
+    padding-top: 2%;
+    border-radius: 50px 0 0 50px;
+    background: url("../image/signup_icon1.png")no-repeat center center;
+    background-size: contain;
+}
+.shrinkLabel2{
+    width: 25%;
+    height: 5%;
+    bottom: 6%;
+    right: -14%;
+    padding-top: 2%;
+    border-radius: 50px 0 0 50px;
+    background: url("../image/signup_icon2.png")no-repeat center center;
+    background-size: contain;
+}
+.conference_tit{
+    width: 69.4%;
+    height: 12.9%;
+    left: 5.3%;
+    top: 16%;
+    background: url(../image/Group_2.png)no-repeat center center;
+    background-size: contain;
+}
+.conference_con{
+    width: 89.3%;
+    height: 48%;
+    left: 5.3%;
+    top: 25.2%;
+    background: url(../image/Group_3.png)no-repeat center center;
+    background-size: contain;
+}
+.wenzi4{
+    width: 89.3%;
+    height: 13%;
+    left: 5.3%;
+    top: 70.2%;
+    background: url(../image/wenzi4.png)no-repeat center center;
+    background-size: contain;
+}
+.conference_agendum_icon{
+    width: 28.3%;
+    height: 4.2%;
+    left: 5.3%;
+    top: 7%;
+    background: url(../image/agendum.png)no-repeat center center;
+    background-size: contain;
+}
+.conference_agendum{
+    width: 89.3%;
+    height: 81%;
+    left: 5.3%;
+    top: 14.2%;
+    background: url(../image/Group_7.png)no-repeat center center;
+    background-size: contain;
+}
+.conference_guest1{
+    width: 89.4%;
+    height: 37%;
+    left: 5.3%;
+    top: 19.5%;
+    background: url(../image/Group_5.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1s alternate ease-out;
+}
+.conference_guest2{
+    width: 89.4%;
+    height: 37%;
+    left: 5.3%;
+    top: 54.5%;
+    background: url(../image/Group_6.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: rmoveIn 1s alternate ease-out;
+}
+.conference_guest3{
+    width: 94.6%;
+    height: 21%;
+    left: 2.7%;
+    top: 23.1%;
+    background: url(../image/Group_8.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1s alternate ease-out;
+}
+.conference_guest4{
+    width: 94.6%;
+    height: 21%;
+    left: 2.7%;
+    top: 39.2%;
+    background: url(../image/Group_9.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: rmoveIn 1s alternate ease-out;
+}
+.conference_guest5{
+    width: 94.6%;
+    height: 21%;
+    left: 2.7%;
+    top: 17%;
+    background: url(../image/Group_10.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: rmoveIn 1s alternate ease-out;
+}
+.conference_guest6{
+    width: 94.6%;
+    height: 21%;
+    left: 2.7%;
+    top: 55.3%;
+    background: url(../image/Group_11.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1s alternate ease-out;
+}
+.conference_guest7{
+    width: 94.6%;
+    height: 21%;
+    left: 2.7%;
+    top: 33%;
+    background: url(../image/Group_12.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1s alternate ease-out;
+}
+.conference_guest8{
+    width: 94.6%;
+    height: 21%;
+    left: 2.7%;
+    top: 49.1%;
+    background: url(../image/Group_13.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: rmoveIn 1s alternate ease-out;
+}
+.conference_guest9{
+    width: 94.6%;
+    height: 21%;
+    left: 2.7%;
+    top: 65.6%;
+    background: url(../image/Group_14.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1s alternate ease-out;
+}
+.conference_guest10{
+    width: 94.6%;
+    height: 18.7%;
+    left: 2.7%;
+    top: 20.5%;
+    background: url(../image/Group_15.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1s alternate ease-out;
+}
+.conference_guest11{
+     width: 94.6%;
+     height: 18.7%;
+     left: 2.7%;
+     top: 40.5%;
+     background: url(../image/Group_16.png)no-repeat center center;
+     background-size: contain;
+    transform-origin: 100% 0;
+    animation: rmoveIn 1s alternate ease-out;
+ }
+.conference_guest12{
+    width: 94.6%;
+    height: 18.7%;
+    left: 2.7%;
+    top: 60.5%;
+    background: url(../image/Group_17.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1s alternate ease-out;
+}
+.conference_guest13{
+    width: 89.4%;
+    height: 40.7%;
+    left: 5.3%;
+    top: 12.5%;
+    background: url(../image/Group_18.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1s alternate ease-out;
+}
+.conference_guest14{
+    width: 89.4%;
+    height: 39.7%;
+    left: 5.3%;
+    top: 52.4%;
+    background: url(../image/Group_19.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: rmoveIn 1s alternate ease-out;
+}
+.conference_guest15{
+    width: 89.3%;
+    height: 26.2%;
+    left: 5.3%;
+    top: 14%;
+    background: url(../image/Group_20.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1s alternate ease-out;
+}
+.conference_guest16{
+    width: 89.3%;
+    height: 50%;
+    left: 5.3%;
+    top: 40.8%;
+    background: url(../image/Group_21.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: rmoveIn 1s alternate ease-out;
+}
+.conference_guest17{
+    width: 89.3%;
+    height: 71.3%;
+    left: 5.3%;
+    top: 14.5%;
+    background: url(../image/Group_22.png)no-repeat center center;
+    background-size: contain;
+}
+.conference_guest18{
+    width: 89.3%;
+    height: 64.3%;
+    left: 5.3%;
+    top: 18%;
+    background: url(../image/Group_23.png)no-repeat center center;
+    background-size: contain;
+}
+.conference_guest19{
+    width: 89.3%;
+    height: 19.3%;
+    left: 5.3%;
+    top: 18%;
+    background: url(../image/Group_24.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1s alternate ease-out;
+}
+.conference_guest20{
+    width: 89.3%;
+    height: 46.7%;
+    left: 5.3%;
+    top: 41%;
+    background: url(../image/Group_25.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: rmoveIn 1s alternate ease-out;
+}
+.conference_guest21{
+    width: 89.3%;
+    height: 40.3%;
+    left: 5.3%;
+    top: 17%;
+    background: url(../image/Group_26.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: lmoveIn 1s alternate ease-out;
+}
+.conference_guest22{
+    width: 89.3%;
+    height: 28.7%;
+    left: 5.3%;
+    top: 60%;
+    background: url(../image/Group_27.png)no-repeat center center;
+    background-size: contain;
+    transform-origin: 100% 0;
+    animation: rmoveIn 1s alternate ease-out;
+}
+.share{
+    width: 65.3%;
+    height: 26.7%;
+    left: 41.3%;
+    top: -37%;
+    background: url(../image/share.png)no-repeat center center;
+    background-size: contain;
+}
+.m-tips{
+    width:20px;
+    height:18px;
+    background:url(../image/ico-up_1.png) no-repeat;
+    background-size: 20px;
+    position:fixed;
+    left:50%;
+    bottom:40px;
+    margin-left:-15px;
+    z-index:999;
+    -webkit-animation:arrowUpFx 1.5s infinite;
+    animation:arrowUpFx 1.5s infinite
+}
+@keyframes arrowUpFx{
+    0%{transform:translateY(42px);-webkit-transform:translateY(42px);opacity:0}
+    60%{transform:translateY(12px);-webkit-transform:translateY(12px);opacity:1}
+    100%{transform:translateY(0px);-webkit-transform:translateY(0px);opacity:0}
+}
+@-webkit-keyframes arrowUpFx{
+    0%{transform:translateY(42px);-webkit-transform:translateY(42px);opacity:0}
+    60%{transform:translateY(12px);-webkit-transform:translateY(12px);opacity:1}
+    100%{transform:translateY(0px);-webkit-transform:translateY(0px);opacity:0}
+}
+@keyframes arrowDownFx{
+    0%{transform:translateY(0px);-webkit-transform:translateY(0px);opacity:0}
+    60%{transform:translateY(12px);-webkit-transform:translateY(12px);opacity:1}
+    100%{transform:translateY(42px);-webkit-transform:translateY(42px);opacity:0}
+
+}
+@-webkit-keyframes arrowDownFx{
+    0%{transform:translateY(0px);-webkit-transform:translateY(0px);opacity:0}
+    60%{transform:translateY(12px);-webkit-transform:translateY(12px);opacity:1}
+    100%{transform:translateY(42px);-webkit-transform:translateY(42px);opacity:0}
+
+}
+.p-index{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.m-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.m-page.show {
+    z-index: 10;
+    display: block;
+}
+.m-page.hide {
+    z-index: 5;
+    display: none;
+}
+.m-page.active {
+    z-index: 15;
+    display: block;
+}
+.Rubik{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 101%;
+    background: #071341;
+}
+.spinner{
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -30px;
+    margin-left: -30px;
+    text-align: center;
+}
+.loading{
+    width: 50%;
+    padding-top: 50%;
+    margin: 0 auto;
+    background: url("../image/loading.gif") no-repeat center center;
+    background-size: contain;
+}
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
+.error_info{
+    display: none;
+    color: #fff100;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, sans-serif;
+    text-align: center;
+
+}

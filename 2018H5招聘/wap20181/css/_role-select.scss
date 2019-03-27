@@ -1,0 +1,146 @@
+.role-select {
+  background: url("../images/main-bg.png") no-repeat center;
+  background-size: 100% 100%;
+
+  .role-size {
+    top: px2rem(130);
+    margin-left: px2rem(-277);
+    width: px2rem(554);
+    height: px2rem(132);
+  }
+
+  .content {
+    .role-list {
+      margin: 0 auto;
+      padding-top: px2rem(250);
+      width: px2rem(685);
+      height: px2rem(450);
+      position: relative;
+    }
+
+    .role-list1 {
+      width: 100%;
+      position: absolute;
+      top: px2rem(-70);
+      z-index: 1;
+    }
+
+    .role-list2 {
+      width: 100%;
+      position: absolute;
+      top: px2rem(180);
+    }
+
+    .role-list3 {
+      width: 100%;
+      position: absolute;
+      top: px2rem(450);
+    }
+
+    .icon {
+      width: 24.9%;
+      min-width: px2rem(152);
+      height: px2rem(152);
+      display: inline-block;
+      text-align: center;
+      // 选中效果
+      &.selected {
+        i {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          background: url("../images/icon-selected-border.png") no-repeat center;
+          background-size: contain;
+        }
+
+        //
+        .text-chanpingjl {
+          background: url("../images/text-cpjl-selected.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .text-qianduan {
+          background: url("../images/text-qd-selected.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .text-android {
+          background: url("../images/text-andriod-selected.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .text-ios {
+          background: url("../images/text-ios-selected.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .text-chanpingzj {
+          background: url("../images/text-cpzj-selected.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .text-shuju {
+          background: url("../images/text-shuju-selected.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .text-test {
+          background: url("../images/text-test-selected.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .text-java {
+          background: url("../images/text-java-selected.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .text-jiaohu {
+          background: url("../images/text-jhsj-selected.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .text-shijue {
+          background: url("../images/text-shijue-selected.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .text-jiagou {
+          background: url("../images/text-jiagou-selected.png") no-repeat center;
+          background-size: contain;
+        }
+
+        .text-jszj {
+          background: url("../images/text-jszj-selected.png") no-repeat center;
+          background-size: contain;
+        }
+      }
+
+      &:last-child {
+        margin-right: px2rem(-20);
+      }
+      .inner-icon {
+        display: inline-block;
+        width: px2rem(152);
+        height: px2rem(152);
+      }
+
+      .text {
+        display: inline-block;
+        height: px2rem(32);
+        width: 100%;
+      }
+    }
+  }
+
+  //
+  .select-footer {
+    .sure-btn {
+      width: px2rem(346);
+      height: px2rem(100);
+      margin: 0 auto;
+      background: url("../images/sure-select.png") no-repeat center;
+      background-size: contain;
+      animation: shake 0.8s linear infinite;
+    }
+  }
+}

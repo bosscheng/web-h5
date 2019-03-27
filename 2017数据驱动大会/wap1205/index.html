@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2017苏宁数据驱动者论坛</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="//ssl.suning.com/favicon.ico" type="image/x-icon">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/index.css?v=10">
+</head>
+<body>
+<div class="Rubik">
+    <div class="spinner">
+        <div class="loading"></div>
+    </div>
+</div>
+<section class="p-index" id="M">
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio1"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio2"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio3"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio4"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio5"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio6"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio7"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio8"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio9"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio10"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio11"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio15"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio12">
+                <div class="radio12-inner radio12-1">
+
+                </div>
+                <div class="radio12-inner radio12-2">
+
+                </div>
+                <div class="radio12-inner radio12-3">
+
+                </div>
+            </div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio13"></div>
+            <div>
+                <a href="javascript:;" class="m-tips" style=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-page">
+        <div class="tabBox">
+            <div class="radio radio14"></div>
+            <div class="qr-code"><img src="./images/qr_code.png" alt="" width="100%" height="100%"></div>
+        </div>
+    </section>
+</section>
+<div class="shrinkLabel"></div>
+<script src="//res.suning.cn/public/v5/js/zepto/1.1.4/app.js"></script>
+<script src="//res.suning.cn/public/v3/js/lazyelem.min.js?2017082803"></script>
+<script src="js/mod.base.js?v=10"></script>
+<!-- 微信分享开始 -->
+<script type="text/javascript">
+    // 标题
+    var _title = '2017苏宁数据驱动者论坛';
+    // 描述
+    var _content = '12月16日，数据驱动者们齐聚苏宁总部，邀您共探数据背后的奥秘！';
+    // 图片地址
+    var _image = 'http://sale.suning.com/zq/wap1205/images/share.png';
+
+    $.loadMod(MOD_URL.weixin).done(function(){
+        wxShare.config({
+            // 朋友圈数据
+            title:_title,
+            desc:_content,
+            link:window.location.href,
+            imgUrl:_image
+        }).loadJWeixin(function() {});
+    });
+
+    $.base.appShare(_title, _content, _image)
+
+    // 懒加载方法，需要配合 <img data-src="真实图片地址" /> 使用
+    $("html").lazyload();
+</script>
+<!-- 微信分享结束 -->
+<script type="text/javascript">
+    $.loadScript({ loadGa: true })
+</script>
+</body>
+</html>

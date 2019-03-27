@@ -1,0 +1,238 @@
+.page-pk-result {
+  background: url("../images/bg-bg2.jpg") no-repeat center;
+  background-size: cover;
+  background-position: left 0 bottom 0;
+
+  .pk-result-content {
+    width: px2rem(647);
+    height: px2rem(987);
+    margin: 0 auto;
+    margin-top: px2rem(50);
+    background: url("../images/share-bg-bg2.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .right-icon {
+    position: absolute;
+    right: px2rem(30);
+    top: px2rem(34);
+  }
+
+  .pk-head-qrcode {
+    position: absolute;
+    width: px2rem(160);
+    height: px2rem(160);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: px2rem(265);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .pk-result-win {
+    position: absolute;
+    width: px2rem(399);
+    height: px2rem(206);
+    background: url("../images/pk-result-win.png") no-repeat center;
+    background-size: cover;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: px2rem(425);
+  }
+
+  .pk-result-lose {
+    position: absolute;
+    width: px2rem(449);
+    height: px2rem(263);
+    background: url("../images/pk-result-lose.png") no-repeat center;
+    background-size: cover;
+    bottom: px2rem(410);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .pk-result-pingjun {
+    position: absolute;
+    width: px2rem(399);
+    height: px2rem(180);
+    background: url("../images/pk-result-draw.png") no-repeat center;
+    background-size: cover;
+    bottom: px2rem(435);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  // red
+  .pk-red {
+    position: absolute;
+    left: px2rem(20);
+    bottom: px2rem(20);
+    width: px2rem(200);
+
+    > div {
+      margin-top: px2rem(20);
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .pk-blue {
+    position: absolute;
+    right: px2rem(20);
+    bottom: px2rem(20);
+    width: px2rem(200);
+    > div {
+      margin-top: px2rem(20);
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .pk-name {
+    color: #d8f1fb;
+    font-size: px2rem(28);
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .pk-score {
+    margin: 0 auto;
+    height: px2rem(99);
+    width: px2rem(104);
+  }
+
+  .pk-score-1 {
+    float: left;
+    width: px2rem(48);
+    height: 100%;
+  }
+
+  .pk-score-2 {
+    float: right;
+    width: px2rem(48);
+    height: 100%;
+  }
+
+  .pk-group {
+    color: #d8f1fb;
+    font-size: px2rem(28);
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .pk-vs {
+    position: absolute;
+    width: px2rem(155);
+    height: px2rem(95);
+    bottom: px2rem(50);
+    left: px2rem(250);
+    background: url("../images/vs.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .pk-result-footer {
+    position: absolute;
+    bottom: px2rem(73);
+    width: 100%;
+    height: px2rem(78);
+
+    .btn-group {
+      width: px2rem(652);
+      height: px2rem(78);
+      margin: 0 auto;
+    }
+
+    .btn {
+      width: px2rem(220);
+      height: 100%;
+    }
+
+    .btn-restart {
+      float: left;
+      background: url("../images/btn/try-choose-team-small.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .btn-support {
+      float: left;
+      width: px2rem(199);
+      background: url("../images/btn/btn-support.png") no-repeat center;
+      background-size: cover;
+      margin-left: px2rem(10);
+    }
+
+    .btn-next {
+      float: right;
+      background: url("../images/btn/make-picture-small.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .pk-result-footer-end {
+    .btn-group {
+      width: px2rem(630);
+    }
+
+    .btn {
+      width: px2rem(290);
+    }
+
+    .btn-try-again {
+      float: left;
+      background: url("../images/btn/try-again.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .btn-share {
+      float: right;
+      background: url("../images/btn/btn-share.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .pk-result-content-img {
+    width: px2rem(647);
+    height: px2rem(987);
+    margin: 0 auto;
+    margin-top: px2rem(50);
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    // 下载提示
+    .download-tips {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 90%;
+    }
+  }
+
+  .pk-head-pic {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: px2rem(50);
+    width: px2rem(647);
+    height: px2rem(987);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

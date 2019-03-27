@@ -1,0 +1,71 @@
+.form-page {
+  background: url("../images/main-bg.png") no-repeat center;
+  background-size: 100% 100%;
+
+  .role-size{
+    top: px2rem(150);
+    margin-left: px2rem(-277);
+    width: px2rem(554);
+    height: px2rem(132);
+  }
+
+  .content {
+    width: px2rem(578);
+    margin: 0 auto;
+    margin-top: px2rem(-50);
+
+    .group {
+      margin-top: px2rem(30);
+
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+    .group-input {
+      height: px2rem(82);
+      width: 100%;
+      margin-top: px2rem(18);
+
+      input, select {
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        font-size: px2rem(50);
+        border: none;
+      }
+      input{
+        padding-left: px2rem(16);
+      }
+    }
+
+    .tips {
+      height: px2rem(52);
+      width: 100%;
+    }
+    .tip1 {
+      background: url("../images/tip-name.png") no-repeat left;
+      background-size: contain;
+    }
+    .tip2 {
+      background: url("../images/tip-tele.png") no-repeat left;
+      background-size: contain;
+    }
+    .tip3 {
+      background: url("../images/tip-work.png") no-repeat left;
+      background-size: contain;
+    }
+    .tip4 {
+      background: url("../images/tip-work-age.png") no-repeat left;
+      background-size: contain;
+    }
+  }
+
+  .footer {
+    .btn {
+      width: px2rem(346);
+      height: px2rem(100);
+      margin: 0 auto;
+      margin-top: px2rem(40);
+    }
+  }
+}

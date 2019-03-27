@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Russia 2018 该你上</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="//ssl.suning.com/favicon.ico" type="image/x-icon">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="./css/index.min.css?v=2">
+</head>
+<body>
+<section class="wrapper">
+    <!--加载页面 -->
+    <section class="page-loading" id="pageLoading">
+        <div class="load-icon">
+            <img src="./images/gq.gif" alt="">
+        </div>
+        <div class="load-icon-end hide"></div>
+        <div class="load-title"></div>
+        <div class="load-loading">
+            <div class="load-loading-percent"></div>
+            <div class="load-loading-icon"></div>
+        </div>
+        <p class="support-tips">苏宁IT出品，苏宁美国研究院技术支持</p>
+    </section>
+    <!-- 主页 -->
+    <section class="page page-main hide" id="pageMain">
+        <div class="main-logo"></div>
+        <div class="main-title">
+            <div class="main-shanguang-top hide"></div>
+        </div>
+        <div class="main-pic1"></div>
+        <div class="main-content">
+            <div class="main-people"></div>
+            <div class="main-p1"></div>
+            <div class="main-p2"></div>
+            <div class="main-animal"></div>
+            <div class="main-sg main-shanguang hide"></div>
+            <div class="main-sg main-shanguang2 hide"></div>
+            <div class="main-sg main-shanguang3 hide"></div>
+            <div class="main-sg main-shanguang4 hide"></div>
+        </div>
+        <!--<div class="main-mask hide"></div>-->
+        <div class="main-footer hide">
+            <div class="big-btn hide go-start"></div>
+            <div class="main-btn-inner">
+                <div class="left-btn go-start"></div>
+                <div class="right-btn" id="goPk"></div>
+            </div>
+        </div>
+        <p class="support-tips">苏宁IT出品，苏宁美国研究院技术支持</p>
+    </section>
+    <!--选择球队-->
+    <section class="page page-choose-team hide" id="pageChooseTeam">
+        <div class="page-title">
+            <div class="title-icon"></div>
+            <div class="title-content"></div>
+        </div>
+        <div class="page-content">
+            <div class="content-body">
+                <div class="content-inner">
+                    <div class="content-item content-item1">
+                        <span class="icon icon11" data-team="xby"></span>
+                        <span class="icon icon12" data-team="bls"></span>
+                    </div>
+                    <div class="content-item content-item2">
+                        <span class="icon icon21" data-team="agt"></span>
+                        <span class="icon icon22" data-team="dg"></span>
+                    </div>
+                    <div class="content-item content-item3">
+                        <span class="icon icon31" data-team="glby"></span>
+                        <span class="icon icon32" data-team="fg"></span>
+                    </div>
+                    <div class="content-item content-item4">
+                        <span class="icon icon41" data-team="pty"></span>
+                        <span class="icon icon42" data-team="zg"></span>
+                    </div>
+                    <div class="content-item content-item5">
+                        <span class="icon icon51" data-team="ygl"></span>
+                        <span class="icon icon52" data-team="bx"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-footer">
+
+            </div>
+        </div>
+        <div class="page-footer"></div>
+        <p class="support-tips">上苏宁易购猜个球儿，赢亿元奖金</p>
+    </section>
+    <!-- 选择球衣 -->
+    <section class="page page-choose-clothes hide" id="pageChooseClothes">
+        <div class="left-icon"></div>
+        <div class="right-icon icon-pptv"></div>
+        <div class="clothes-name"></div>
+        <div class="clothes" id="chooseClothes">
+            <div class="text-name text-name1">
+                <input type="text" class="input-team" maxlength="8" data-flag="first" id="userName" value="输入姓名">
+            </div>
+            <div class="text-name text-name2">
+                <input type="text" class="input-team" maxlength="16" data-flag="first" id="sponsored" value="SUNING">
+            </div>
+            <p class="text-name2-tips">点击可修改赞助商</p>
+        </div>
+        <div class="choose-gender">
+            <div class="gender male selected" data-role="male"></div>
+            <div class="gender female" data-role="female"></div>
+        </div>
+        <div class="choose-btn">
+            <div class="choose-btn-inner">
+                <div class="btn-sure"></div>
+                <div class="btn-restart" data-page="chooseClothes"></div>
+            </div>
+        </div>
+        <p class="support-tips">上苏宁易购猜个球儿，赢亿元奖金</p>
+    </section>
+    <!-- 上传图片 -->
+    <section class="page page-upload-img hide" id="pageUploadImg">
+        <div class="left-icon"></div>
+        <div class="right-icon icon-pptv"></div>
+        <div class="choose-img">
+            <p class="tip tip1">请上传清晰大头照</p>
+            <p class="tip tip2">不要戴眼镜哦!</p>
+            <p class="tip error-tips2 hide">错误提示</p>
+        </div>
+        <div class="choose-btn">
+            <div class="choose-btn-inner">
+                <div class="btn-restart" data-page="uploadImg"></div>
+                <div class="upload-btn"></div>
+            </div>
+        </div>
+        <input type="file" id="fileSelect" accept="image/*">
+        <p class="support-tips">上苏宁易购猜个球儿，赢亿元奖金</p>
+    </section>
+    <!--结果页面-->
+    <section class="page page-share hide" id="pageShare">
+        <div class="share-head-pic">
+            <img src="" alt="">
+        </div>
+        <div class="share-content">
+            <div class="right-icon icon-pptv"></div>
+            <div class="share-head-title"></div>
+            <div class="share-qrcode"><img src="" alt=""></div>
+            <div class="share-info">
+                <p class="user-name"></p>
+                <p class="user-zzs"></p>
+                <p class="weizhi"><span class="icon"></span><span class="tips"></span></p>
+                <p class="techang"><span class="icon"></span><span class="tips"></span></p>
+            </div>
+            <div class="share-power">
+                <div class="power-item fangshou">
+                    <div class="power-title">防守</div>
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                </div>
+                <div class="power-item pandai">
+                    <div class="power-title">盘带</div>
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                </div>
+                <div class="power-item sudu">
+                    <div class="power-title">速度</div>
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                </div>
+                <div class="power-item shesu">
+                    <div class="power-title">射术</div>
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                </div>
+                <div class="power-item chanqiu">
+                    <div class="power-title">传球</div>
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="share-content-img hide">
+            <div class="download-tips"></div>
+            <img src="" alt="">
+        </div>
+        <div class="share-footer share-footer-start">
+            <div class="btn-group btn-group-share">
+                <div class="btn btn-upload-pic" data-page="share"></div>
+                <a href="https://sale.suning.com/all/worldCup1/index.html?isBind=1&wx_nickname=chris&wx_sex=2&wx_unionid=db4c3da79bcc162f8aeee30a7854605d7b7f0d14592494defc4228a1fa10304c&wx_openid=8eb912f3c8275d6632fcad6ad1753e5bfb476d4b7de7f7e65ad031800ccc4262&wx_headimgurl=http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLlicuwQHBgpXsnrh75sgXKicYUFiaXBz2NiaVOdj2rn0uuIevM2QuKiclMIwuiaxVR1PcTEWmPzunQlCFQ/132">
+                    <div class="btn btn-support"></div>
+                </a>
+                <div class="btn btn-next btn-do-share"></div>
+            </div>
+            <div class="btn-group btn-group-pk hide">
+                <div class="btn btn-restart" data-page="share"></div>
+                <div class="btn btn-next btn-go-pk"></div>
+            </div>
+        </div>
+
+        <div class="share-footer share-footer-end hide">
+            <div class="btn-group">
+                <div class="btn btn-try-again"></div>
+                <div class="btn btn-share"></div>
+            </div>
+        </div>
+        <p class="support-tips">上苏宁易购猜个球儿，赢亿元奖金</p>
+    </section>
+    <!-- pk 过程页面-->
+    <section class="page page-pk-process hide" id="pagePkProcess">
+        <div class="fire-football"></div>
+        <div class="vs-icon hide"></div>
+        <div class="process-head">
+            <div class="head-temp left-temp hide">
+                <p class="head-name red-name"></p>
+                <div class="head-pic red-head-pic">
+                    <div class="head-pic-inner"><img src="" alt=""></div>
+                </div>
+            </div>
+            <div class="head-temp right-temp hide">
+                <p class="head-name blue-name"></p>
+                <div class="head-pic blue-head-pic">
+                    <div class="head-pic-inner"><img src="" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="process-tips"></div>
+        <div class="process-body">
+            <div class="body-item body-left">
+                <div class="power-item red-fangshou">
+                    <div class="power-title">防守</div>
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                </div>
+                <div class="power-item red-pandai">
+                    <div class="power-title">盘带</div>
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                </div>
+                <div class="power-item red-sudu">
+                    <div class="power-title">速度</div>
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                </div>
+                <div class="power-item red-shesu">
+                    <div class="power-title">射术</div>
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                </div>
+                <div class="power-item red-chanqiu">
+                    <div class="power-title">传球</div>
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-item body-right">
+                <div class="power-item blue-fangshou">
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                    <div class="power-title">防守</div>
+                </div>
+                <div class="power-item blue-pandai">
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                    <div class="power-title">盘带</div>
+                </div>
+                <div class="power-item blue-sudu">
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                    <div class="power-title">速度</div>
+                </div>
+                <div class="power-item blue-shesu">
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                    <div class="power-title">射术</div>
+                </div>
+                <div class="power-item blue-chanqiu">
+                    <div class="power-line">
+                        <div class="power-line-inner"></div>
+                    </div>
+                    <div class="power-title">传球</div>
+                </div>
+            </div>
+        </div>
+        <div class="process-footer">
+            <div class="red-national"></div>
+            <div class="team-pk red-team"></div>
+            <div class="blue-national"></div>
+            <div class="team-pk blue-team"></div>
+        </div>
+        <!--<div class="process-step hide"></div>-->
+    </section>
+    <!-- pk 结果-->
+    <section class="page page-pk-result hide" id="pagePkResult">
+        <div class="pk-head-pic">
+            <img src="" alt="">
+        </div>
+        <div class="pk-result-content">
+            <div class="right-icon icon-pptv"></div>
+            <div class="pk-head-qrcode"><img src="" alt=""></div>
+            <div class="pk-result-win hide"></div>
+            <div class="pk-result-lose hide"></div>
+            <div class="pk-result-pingjun hide"></div>
+            <div class="pk-red">
+                <div class="pk-name red-name"></div>
+                <div class="pk-score red-score">
+                    <div class="pk-score-1 red-0"></div>
+                    <div class="pk-score-2"></div>
+                </div>
+                <div class="pk-group red-team"></div>
+            </div>
+            <div class="pk-blue">
+                <div class="pk-name blue-name"></div>
+                <div class="pk-score blue-score">
+                    <div class="pk-score-1 black-0"></div>
+                    <div class="pk-score-2"></div>
+                </div>
+                <div class="pk-group blue-team"></div>
+            </div>
+            <div class="pk-vs"></div>
+        </div>
+        <div class="pk-result-content-img hide">
+            <div class="download-tips"></div>
+            <img src="" alt="">
+        </div>
+
+        <div class="pk-result-footer pk-result-footer-start">
+            <div class="btn-group">
+                <div class="btn btn-restart" data-page="pkResult"></div>
+                <a href="https://sale.suning.com/all/worldCup1/index.html?isBind=1&wx_nickname=chris&wx_sex=2&wx_unionid=db4c3da79bcc162f8aeee30a7854605d7b7f0d14592494defc4228a1fa10304c&wx_openid=8eb912f3c8275d6632fcad6ad1753e5bfb476d4b7de7f7e65ad031800ccc4262&wx_headimgurl=http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLlicuwQHBgpXsnrh75sgXKicYUFiaXBz2NiaVOdj2rn0uuIevM2QuKiclMIwuiaxVR1PcTEWmPzunQlCFQ/132">
+                    <div class="btn btn-support" id="supportIt"></div>
+                </a>
+                <div class="btn btn-next" id="makePic"></div>
+            </div>
+        </div>
+
+        <div class="pk-result-footer pk-result-footer-end hide">
+            <div class="btn-group">
+                <div class="btn btn-try-again"></div>
+                <div class="btn btn-share"></div>
+            </div>
+        </div>
+        <p class="support-tips">上苏宁易购猜个球儿，赢亿元奖金</p>
+    </section>
+</section>
+<div class="error-tips-wrap hide" id="errorTipsWrap"></div>
+<section class="page-mask hide" id="pageMask">
+    <div class="content"></div>
+    <p>图片生成中...</p>
+</section>
+
+<section class="page-share-mask hide" id="wxShareMask">
+    <div class="content"></div>
+</section>
+
+<div class="music-div" style="position: absolute;width: 0;height: 0; overflow:hidden;left: 0; top: 0">
+    <audio src="bgm.mp3" autoplay="autoplay" loop="loop" id="J_audio"></audio>
+</div>
+
+<div class="hide-img" id="hideImgWrap">
+    <img src="" alt="" id="hideImg">
+</div>
+
+<div class="shrinkLabel"></div>
+<script src="//res.suning.cn/public/v5/js/zepto/1.1.4/app.js"></script>
+<script src="//res.suning.cn/public/v3/js/lazyelem.min.js?2017082803"></script>
+<script src="./js/exif.js"></script>
+<script src="./js/index.min.js?v=1"></script>
+<!-- 微信分享开始 -->
+<script type="text/javascript">
+    // 标题
+    var _title = 'Russia 2018 该你上';
+    // 描述
+    var _content = '火速加入，不然上场的机会就给别人了!';
+    // 图片地址
+    var _image = 'https://oss.suning.com/vss/other/cuxiao/2018sjb/images/wx-share-logo.jpg';
+
+    $.loadMod(MOD_URL.weixin).done(function () {
+        wxShare.config({
+            // 朋友圈数据
+            title: _title,
+            desc: _content,
+            link: window.location.href,
+            imgUrl: _image
+        }).loadJWeixin(function () {
+        });
+    });
+
+    $.base.appShare(_title, _content, _image);
+
+    // 懒加载方法，需要配合 <img data-src="真实图片地址" /> 使用
+    $("html").lazyload();
+</script>
+<!-- 微信分享结束 -->
+<script type="text/javascript">
+    $.loadScript({loadGa: true})
+</script>
+</body>
+</html>

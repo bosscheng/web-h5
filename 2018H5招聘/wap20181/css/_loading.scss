@@ -1,0 +1,64 @@
+.loading-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: relative;
+
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin-left: px2rem(-225);
+  }
+
+  .progress {
+    width: px2rem(450);
+    height: px2rem(60);
+    background: #d02034;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-radius: px2rem(30);
+  }
+
+  .progress > span {
+    position: relative;
+    float: left;
+    margin: 0 -1px;
+    //min-width: px2rem(2);
+    height: px2rem(56);
+    line-height: px2rem(56);
+    text-align: right;
+    background: #fdda38;
+    border: px2rem(2) solid;
+    border-color: #fdda38 #fdda38 #fdda38;
+    border-radius: px2rem(30);
+    background-image: -webkit-linear-gradient(top, #fdda38 0%, #fdda38 70%, #fdda38 100%);
+    background-image: -moz-linear-gradient(top, #fdda38 0%, #fdda38 70%, #fdda38 100%);
+    background-image: -o-linear-gradient(top, #fdda38 0%, #fdda38 70%, #fdda38 100%);
+    background-image: linear-gradient(to bottom, #fdda38 0%, #fdda38 70%, #fdda38 100%);
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .progress > span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 18px;
+    background: url(../images/progress.png) 0 0 repeat-x;
+    border-radius: 10px;
+  }
+
+  .progress-tips{
+    margin: 0 auto;
+    width: px2rem(142);
+    height: px2rem(26);
+    background: url("../images/loading-tips.png") no-repeat center;
+    background-size: contain;
+    margin-top: px2rem(40);
+  }
+}
