@@ -1,6 +1,6 @@
 /**
  * date: 2018/4/29
- * author: wancheng(17033234)
+ * author:
  * desc:
  */
 
@@ -8,7 +8,7 @@ $(function () {
 
 
     var utils = {
-        // ¼ÓÔØÍ¼Æ¬
+        // ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
         loadImages: function (sources, callback) {
             sources = sources || [];
             var count = 0,
@@ -36,30 +36,30 @@ $(function () {
     };
 
     // binding  events start
-    var Msize = $('.page').size(), //Ò³ÃæµÄÊýÄ¿
-        page_n = 1,			//³õÊ¼Ò³ÃæÎ»ÖÃ
-        initP = null,			//³õÖµ¿ØÖÆÖµ
-        moveP = null,			//Ã¿´Î»ñÈ¡µ½µÄÖµ
-        firstP = null,			//µÚÒ»´Î»ñÈ¡µÄÖµ
-        newM = 1,			//ÖØÐÂ¼ÓÔØµÄ¸¡²ã
-        p_b = null,			//·½Ïò¿ØÖÆÖµ
-        indexP = null, 		//¿ØÖÆÊ×Ò³²»ÄÜÖ±½ÓÕÒ×ªµ½×îºóÒ»Ò³
-        move = null,			//´¥ÃþÄÜ»¬¶¯Ò³Ãæ
-        start = true, 		//¿ØÖÆ¶¯»­¿ªÊ¼
-        startM = null,			//¿ªÊ¼ÒÆ¶¯
-        position = null,			//·½ÏòÖµ
-        DNmove = false,		//ÆäËû²Ù×÷²»ÈÃÒ³ÃæÇÐ»»
-        mapS = null,			//µØÍ¼±äÁ¿Öµ
-        canmove = false,		//Ê×Ò³·µ»Ø×îºóÒ»Ò³
-        textNode = [],			//ÎÄ±¾¶ÔÏó
+    var Msize = $('.page').size(), //Ò³ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
+        page_n = 1,			//ï¿½ï¿½Ê¼Ò³ï¿½ï¿½Î»ï¿½ï¿½
+        initP = null,			//ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Öµ
+        moveP = null,			//Ã¿ï¿½Î»ï¿½È¡ï¿½ï¿½ï¿½ï¿½Öµ
+        firstP = null,			//ï¿½ï¿½Ò»ï¿½Î»ï¿½È¡ï¿½ï¿½Öµ
+        newM = 1,			//ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ØµÄ¸ï¿½ï¿½ï¿½
+        p_b = null,			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        indexP = null, 		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³
+        move = null,			//ï¿½ï¿½ï¿½ï¿½ï¿½Ü»ï¿½ï¿½ï¿½Ò³ï¿½ï¿½
+        start = true, 		//ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼
+        startM = null,			//ï¿½ï¿½Ê¼ï¿½Æ¶ï¿½
+        position = null,			//ï¿½ï¿½ï¿½ï¿½Öµ
+        DNmove = false,		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Ð»ï¿½
+        mapS = null,			//ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Öµ
+        canmove = false,		//ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³
+        textNode = [],			//ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½
         mousedown = null,
-        textInt = 1;			//ÎÄ±¾¶ÔÏóË³Ðò
+        textInt = 1;			//ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½
 
 
     /*
-     ** µ¥Ò³ÇÐ»» ¸÷¸öÔªËØfixed ¿ØÖÆbody¸ß¶È
+     ** ï¿½ï¿½Ò³ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½fixed ï¿½ï¿½ï¿½ï¿½bodyï¿½ß¶ï¿½
      */
-    var v_w = null;		//¼ÇÂ¼Éè±¸µÄ¸ß¶È
+    var v_w = null;		//ï¿½ï¿½Â¼ï¿½è±¸ï¿½Ä¸ß¶ï¿½
 
     function init_pageH() {
         var fn_w = function () {
@@ -83,7 +83,7 @@ $(function () {
     };
 
 
-    //°ó¶¨ÊÂ¼þ
+    //ï¿½ï¿½ï¿½Â¼ï¿½
     function changeOpen(e) {
         $('.page').on('mousedown touchstart', function (e) {
             if (e.type == 'touchstart') {
@@ -97,7 +97,7 @@ $(function () {
         $('.page').on('mousemove touchmove', function (e) {
             e.preventDefault();
             e.stopPropagation();
-            //ÅÐ¶ÏÊÇ·ñ¿ªÊ¼»òÕßÔÚÒÆ¶¯ÖÐ»ñÈ¡Öµ
+            //ï¿½Ð¶ï¿½ï¿½Ç·ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½Ð»ï¿½È¡Öµ
             if (start || startM) {
                 startM = true;
                 if (e.type == 'touchmove') {
@@ -105,19 +105,19 @@ $(function () {
                 } else {
                     if (mousedown) moveP = e.Y || e.pageY;
                 }
-                page_n == 1 ? indexP = false : indexP = true;	//true Îª²»ÊÇµÚÒ»Ò³ falseÎªµÚÒ»Ò³
+                page_n == 1 ? indexP = false : indexP = true;	//true Îªï¿½ï¿½ï¿½Çµï¿½Ò»Ò³ falseÎªï¿½ï¿½Ò»Ò³
             }
 
-            //ÉèÖÃÒ»¸öÒ³Ãæ¿ªÊ¼ÒÆ¶¯
+            //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò³ï¿½æ¿ªÊ¼ï¿½Æ¶ï¿½
             if (moveP && startM) {
 
-                //ÅÐ¶Ï·½Ïò²¢ÈÃÒ»¸öÒ³Ãæ³öÏÖ¿ªÊ¼ÒÆ¶¯
+                //ï¿½Ð¶Ï·ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½Ö¿ï¿½Ê¼ï¿½Æ¶ï¿½
                 if (!p_b) {
                     p_b = true;
-                    position = moveP - initP > 0 ? true : false;	//true ÎªÏòÏÂ»¬¶¯ false ÎªÏòÉÏ»¬¶¯
+                    position = moveP - initP > 0 ? true : false;	//true Îªï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½ false Îªï¿½ï¿½ï¿½Ï»ï¿½ï¿½ï¿½
                     if (position) {
 
-                        //ÏòÏÂÒÆ¶¯
+                        //ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
                         if (indexP) {
                             newM = page_n - 1;
                             $('.page').eq(newM - 1).addClass('active').css('top', -v_w);
@@ -132,11 +132,11 @@ $(function () {
                         }
 
                     } else {
-                        //ÏòÉÏÒÆ¶¯d
+                        //ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½d
                         if (page_n != Msize) {
                             newM = page_n + 1;
                         } else {
-                            // ½ûÖ¹Ñ­»·ÉÏ·­
+                            // ï¿½ï¿½Ö¹Ñ­ï¿½ï¿½ï¿½Ï·ï¿½
                             move = false;
                             return;
                         }
@@ -145,11 +145,11 @@ $(function () {
                     }
                 }
 
-                //¸ù¾ÝÒÆ¶¯ÉèÖÃÒ³ÃæµÄÖµ
+                //ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Öµ
                 if (!DNmove) {
-                    //»¬¶¯´ø¶¯Ò³Ãæ»¬¶¯
+                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½æ»¬ï¿½ï¿½
                     if (move) {
-                        //ÒÆ¶¯ÖÐÉèÖÃÒ³ÃæµÄÖµ£¨top£©
+                        //ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Öµï¿½ï¿½topï¿½ï¿½
                         start = false;
                         var topV = parseInt($('.page').eq(newM - 1).css('top'));
                         $('.page').eq(newM - 1).css({'top': topV + moveP - initP});
@@ -164,37 +164,37 @@ $(function () {
         });
 
         $('.page').on('mouseup touchend mouseout', function (e) {
-            //½áÊø¿ØÖÆÒ³Ãæ
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½
             startM = null;
             p_b = false;
-            //ÅÐ¶ÏÒÆ¶¯µÄ·½Ïò
+            //ï¿½Ð¶ï¿½ï¿½Æ¶ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
             var move_p;
             position ? move_p = moveP - firstP > 100 : move_p = firstP - moveP > 100;
             if (move) {
-                //ÇÐ»­Ò³Ãæ(ÒÆ¶¯³É¹¦)
+                //ï¿½Ð»ï¿½Ò³ï¿½ï¿½(ï¿½Æ¶ï¿½ï¿½É¹ï¿½)
                 if (move_p && Math.abs(moveP) > 5) {
                     $('.page').eq(newM - 1).animate({'top': 0}, 300, 'easeOutSine', function () {
                         /*
-                         ** ÇÐ»»³É¹¦»Øµ÷µÄº¯Êý
+                         ** ï¿½Ð»ï¿½ï¿½É¹ï¿½ï¿½Øµï¿½ï¿½Äºï¿½ï¿½ï¿½
                          */
                         success();
                     });
-                    //·µ»ØÒ³Ãæ(ÒÆ¶¯Ê§°Ü)
-                } else if (Math.abs(moveP) >= 5) {	//Ò³ÃæÍË»ØÈ¥
+                    //ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½(ï¿½Æ¶ï¿½Ê§ï¿½ï¿½)
+                } else if (Math.abs(moveP) >= 5) {	//Ò³ï¿½ï¿½ï¿½Ë»ï¿½È¥
                     position ? $('.page').eq(newM - 1).animate({'top': -v_w}, 100, 'easeOutSine') : $('.page').eq(newM - 1).animate({'top': v_w}, 100, 'easeOutSine');
                     $('.page').eq(newM - 1).removeClass('active');
                     start = true;
                 }
             }
-            /* ³õÊ¼»¯Öµ */
-            initP = null,			//³õÖµ¿ØÖÆÖµ
-                moveP = null,			//Ã¿´Î»ñÈ¡µ½µÄÖµ
-                firstP = null,			//µÚÒ»´Î»ñÈ¡µÄÖµ
-                mousedown = null;			//È¡ÏûÊó±ê°´ÏÂµÄ¿ØÖÆÖµ
+            /* ï¿½ï¿½Ê¼ï¿½ï¿½Öµ */
+            initP = null,			//ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Öµ
+                moveP = null,			//Ã¿ï¿½Î»ï¿½È¡ï¿½ï¿½ï¿½ï¿½Öµ
+                firstP = null,			//ï¿½ï¿½Ò»ï¿½Î»ï¿½È¡ï¿½ï¿½Öµ
+                mousedown = null;			//È¡ï¿½ï¿½ï¿½ï¿½ê°´ï¿½ÂµÄ¿ï¿½ï¿½ï¿½Öµ
         });
     };
 
-    //È¡Ïû°ó¶¨ÊÂ¼þ
+    //È¡ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
     function changeClose(e) {
         $('.page').off('mousedown touchstart');
         $('.page').off('mousemove touchmove');
@@ -204,18 +204,18 @@ $(function () {
 
     function success() {
         /*
-         ** ÇÐ»»³É¹¦»Øµ÷µÄº¯Êý
+         ** ï¿½Ð»ï¿½ï¿½É¹ï¿½ï¿½Øµï¿½ï¿½Äºï¿½ï¿½ï¿½
          */
         var thisPage = $('.page').eq(newM - 1);
-        //ÉèÖÃÒ³ÃæµÄ³öÏÖ
+        //ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½Ä³ï¿½ï¿½ï¿½
         $('.page').eq(page_n - 1).removeClass('show active').addClass('hide');
         thisPage.removeClass('active hide').addClass('show');
-        //ÖØÐÂÉèÖÃÒ³ÃæÒÆ¶¯µÄ¿ØÖÆÖµ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Öµ
         page_n = newM;
         start = true;
 
 
-        //Òþ²ØÆäËûÒ³µÄÔ²ºÍÔªËØ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½Ô²ï¿½ï¿½Ôªï¿½ï¿½
         $('.page').each(function (k, v) {
             $('.next-page').toggle(k !== page_n - 1);
         });
@@ -224,9 +224,9 @@ $(function () {
     // binding events end
     init_pageH();
 
-    //¿ªÆôÊÂ¼þ°ó¶¨»¬¶¯
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ó¶¨»ï¿½ï¿½ï¿½
     changeOpen();
-    // ¿ªÆô¼ÓÔØ¶¯»­Ð§¹û¡£
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½
     var img1 = ['head-pic-gw.png', 'head-pic-hj.png', 'head-pic-lx.png', 'head-pic-lyx.png', 'head-pic-wmq.png', 'head-pic-wp.png', 'head-pic-zqc.png'];
     var img2 = ['am.png', 'pm.png', 'guest-bg.png', 'guest-title.png', 'qcord.jpg', 'next-page.png', 'schedule-title.png', 'wrap-bg.jpg'];
     var img3 = ['home-box.png', 'home-line.png', 'home-logo.png'];
@@ -240,7 +240,7 @@ $(function () {
     var $pageHome = $('.page-home');
     var $nextDiv = $('.next-page');
 
-    // ¼ÓÔØÍ¼Æ¬×ÊÔ´
+    // ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ô´
     utils.loadImages(img1, function (loadSize, allSize, percent) {
         if (percent == 1) {
             $loadDiv.hide();

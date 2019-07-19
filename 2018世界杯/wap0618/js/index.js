@@ -1,7 +1,7 @@
 /*
-* author: wancheng
+* author:
 * date: 6/12/18
-* desc: 
+* desc:
 */
 
 $(function () {
@@ -27,7 +27,7 @@ $(function () {
     var _sponsored = 'SUNING';// 赞助商
     var _setTimeout = null;
     var _token = '';
-    var _shareToken = ''; // 
+    var _shareToken = ''; //
     // 红方数据
     var _redData = {};
     // 蓝方数据

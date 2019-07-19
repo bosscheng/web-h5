@@ -1,6 +1,6 @@
 /**
  * date: 2017/12/5
- * author: wancheng(17033234)
+ * author:
  * desc:
  */
 $(function () {

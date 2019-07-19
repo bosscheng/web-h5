@@ -1,7 +1,7 @@
 /*
-* author: wancheng
+* author:
 * date: 9/28/18
-* desc: 
+* desc:
 */
 
 $(function () {
