@@ -760,33 +760,6 @@
 <script src="//res.suning.cn/public/v5/js/zepto/1.1.4/app.js"></script>
 <script src="//res.suning.cn/public/v3/js/lazyelem.min.js?2017082803"></script>
 <script src="./js/index.js?v=3"></script>
-
-<!-- 微信分享开始 -->
-<script type="text/javascript">
-    // 标题
-    var _title = '频频年终团灭吃不了鸡得不了奖？也许你需要换一个队友';
-    // 描述
-    var _content = '这个春天和世界五百强来一场约会';
-    // 图片地址
-    var _image = 'http://sale.suning.com/zq/wap20181/images/wx-share2.jpg';
-
-    $.loadMod(MOD_URL.weixin).done(function () {
-        wxShare.config({
-            // 朋友圈数据
-            title: _title,
-            desc: _content,
-            link: window.location.href,
-            imgUrl: _image
-        }).loadJWeixin(function () {
-        });
-    });
-
-    $.base.appShare(_title, _content, _image);
-
-    // 懒加载方法，需要配合 <img data-src="真实图片地址" /> 使用
-    $("html").lazyload();
-</script>
-<!-- 微信分享结束 -->
 <script type="text/javascript">
     $.loadScript({loadGa: true})
 </script>

@@ -294,33 +294,6 @@
 <script src="//res.suning.cn/public/v5/js/zepto/1.1.4/app.js"></script>
 <script src="//res.suning.cn/public/v3/js/lazyelem.min.js?2017082803"></script>
 <script src="./js/index.min.js?v=12"></script>
-
-<!-- 微信分享开始 -->
-<script type="text/javascript">
-    // 标题
-    var _title = '苏宁前端技术交流论坛';
-    // 描述
-    var _content = '5月12日，大牛们相聚苏宁共话前端，诚邀您的加入！';
-    // 图片地址
-    var _image = 'https://oss.suning.com/vss/other/act/image/wx-share1.jpg';
-
-    $.loadMod(MOD_URL.weixin).done(function () {
-        wxShare.config({
-            // 朋友圈数据
-            title: _title,
-            desc: _content,
-            link: window.location.href,
-            imgUrl: _image
-        }).loadJWeixin(function () {
-        });
-    });
-
-    $.base.appShare(_title, _content, _image);
-
-    // 懒加载方法，需要配合 <img data-src="真实图片地址" /> 使用
-    $("html").lazyload();
-</script>
-<!-- 微信分享结束 -->
 <script type="text/javascript">
     $.loadScript({loadGa: true})
 </script>

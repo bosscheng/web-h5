@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta content="telephone=no" name="format-detection">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <link rel="stylesheet" href="css/index.css?v=10">
+    <link rel="stylesheet" href="./css/index.css?v=10">
 </head>
 <body>
 <div class="Rubik">
@@ -151,32 +151,7 @@
 <div class="shrinkLabel"></div>
 <script src="//res.suning.cn/public/v5/js/zepto/1.1.4/app.js"></script>
 <script src="//res.suning.cn/public/v3/js/lazyelem.min.js?2017082803"></script>
-<script src="js/mod.base.js?v=10"></script>
-<!-- 微信分享开始 -->
-<script type="text/javascript">
-    // 标题
-    var _title = '2017苏宁数据驱动者论坛';
-    // 描述
-    var _content = '12月16日，数据驱动者们齐聚苏宁总部，邀您共探数据背后的奥秘！';
-    // 图片地址
-    var _image = 'http://sale.suning.com/zq/wap1205/images/share.png';
-
-    $.loadMod(MOD_URL.weixin).done(function(){
-        wxShare.config({
-            // 朋友圈数据
-            title:_title,
-            desc:_content,
-            link:window.location.href,
-            imgUrl:_image
-        }).loadJWeixin(function() {});
-    });
-
-    $.base.appShare(_title, _content, _image)
-
-    // 懒加载方法，需要配合 <img data-src="真实图片地址" /> 使用
-    $("html").lazyload();
-</script>
-<!-- 微信分享结束 -->
+<script src="./js/mod.base.js?v=10"></script>
 <script type="text/javascript">
     $.loadScript({ loadGa: true })
 </script>
