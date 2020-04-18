@@ -169,7 +169,7 @@ $(function () {
             // 默认走 sit 的接口
             result = '//actsit.cnsuning.com';
         }
-        return result;
+        return '//facegame.suning.com';
     }();
 
     function _ajax(options, promise) {
@@ -596,7 +596,7 @@ $(function () {
         var next = current;
         var index = utils.indexOf(_teamList, current);
         var length = _teamList.length;
-        if (type == 'left') {
+        if (type === 'left') {
             if (index === 0) {
                 next = _teamList[length - 1];
             }
